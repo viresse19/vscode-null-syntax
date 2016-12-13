@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>uuid</key>
+    <string>32bk64fa-d60n-4858-a5fc-5164xc49a2b8</string>
+    <key>name</key>
+    <string>Null-Syntax</string>
+    <key>semanticClass</key>
+    <string>Null-Syntax</string>
+    <key>settings</key>
+    <array>
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#1c1b1a</string>
+          <key>caret</key>
+          <string>#ffffff</string>
+          <key>foreground</key>
+          <string>#dbdbdb</string>
+          <key>invisibles</key>
+          <string>#dbdbdb10</string>
+          <key>selection</key>
+          <string>#6fb05030</string>
+          <key>selectionBorder</key>
+          <string>#6fb05070</string>
+          <key>lineHighlight</key>
+          <string>#181716</string>
+          <key>guide</key>
+          <string>#dbdbdb35</string>
+          <key>activeGuide</key>
+          <string>#dbdbdb50</string>
+          <key>findHighlight</key>
+          <string>#e2d29440</string>
+          <key>bracketsForeground</key>
+          <string>#e79d8d</string>
+          <key>bracketContentsForeground</key>
+          <string>#96b3f2</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>comment, punctuation.definition.comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#aca6c9</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        attribute-name, property-name,
+        object-literal.key, json.property-name,
+        yaml.entity.name.tag
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#e2d294</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        variable.property.object.parameter.object-binding-pattern,
+        property.object.object-binding-pattern-variable
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a0a0a0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>token.string, token.numeric, token.constant.numeric.decimal</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a1dbe3</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>support.function, entity.name.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fdbd7d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        token.variable, support, variable.template, constant.template, entity.name,
+        token.type.entity.name.new.module,
+        variable.support.dom, entity.inherited-class, constant,
+        support.variable.property
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#dbdbdb</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        keyword.operator, json.punctuation.separator,
+        punctuation.separator.key, punctuation.separator.key-value,
+        punctuation.definition.scalar.folded,
+        yaml.chomping-indicator,
+        punctuation.definition.sequence.item
+
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#e79d8d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>meta.brace, braces.without-arguments.arguments</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#707070</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>storage, storage.type, storage.type.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a0a0a0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        keyword.reserved, keyword.control, constant.language.import-export-all,
+        css.keyword.other.unit
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#e79d8d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        language.this, language.super, support.builtin, variable.object.support.node,
+        support.process, constant.support, support.class, constant.language,
+        markup.heading.section
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b4dc8d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>language</string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        function-call, entity.name.function-call, definition.entity.name.function, tag.entity.name
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fdbd7d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        var-single-variable,
+        variable.parameters.parameter, import.variable.readwrite,
+        variable.parameter.arrow.declaration,
+        type.entity.name.class,
+        type.entity.name.expr.new,
+        class.definition.field.property.variable.object,
+        class.definition.property.entity.function,
+        class.definition.name.method.entity.function,
+        definition.entity.name.function,
+        variable.readwrite.var.expr.object-binding-pattern-variable,
+        attribute-name, property-name,
+        object-literal.key,
+        variable.property.object.parameter.object-binding-pattern,
+        property.object.object-binding-pattern-variable,
+        markup.heading.section,
+        yaml.entity.name
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>regex</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#96b3f2</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.punctuation, string.quoted.punctuation,
+        string.template.punctuation, meta.delimiter,
+        punctuation.accessor, punctuation.separator,
+        markup.heading
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#909090</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>punctuation.terminator</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#707070</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

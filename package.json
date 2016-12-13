@@ -1,0 +1,38 @@
+{
+  "name": "null-syntax",
+  "displayName": "Null Syntax",
+  "version": "0.1.0",
+  "description": "Null Syntax",
+  "publisher": "nfour",
+  "scripts": {
+    "start": "nodemon -w ./src -x 'node -r babel-register' ./src/build"
+  },
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-watch": "^2.0.3",
+    "color": "^0.11.4",
+    "plist": "^2.0.1",
+    "yargs": "^6.3.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Null Syntax",
+        "uiTheme": "vs-dark",
+        "path": "./themes/null-syntax.tmTheme"
+      }
+    ]
+  },
+  "dependencies": {
+    "babel-register": "^6.18.0",
+    "nodemon": "^1.11.0"
+  }
+}
