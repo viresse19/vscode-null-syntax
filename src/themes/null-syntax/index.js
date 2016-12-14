@@ -90,7 +90,6 @@ export default {
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
         punctuation.definition.sequence.item
-
       `,
       settings: { foreground: elements.operator }
     },
@@ -101,7 +100,7 @@ export default {
     },
 
     {
-      scope: 'storage, storage.type, storage.type.function',
+      scope: 'storage, storage.type, storage.type.function, meta.annotation',
       settings: { foreground: elements.storage }
     },
 
@@ -168,7 +167,8 @@ export default {
         meta.punctuation, string.quoted.punctuation,
         string.template.punctuation, meta.delimiter,
         punctuation.accessor, punctuation.separator,
-        markup.heading
+        markup.heading, punctuation.definition.switch-statement,
+        import.keyword.control.from
       `,
       settings: { foreground: elements.punctuation }
     },

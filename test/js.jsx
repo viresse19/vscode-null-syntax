@@ -1,5 +1,10 @@
 class Test extends A {}
 
+switch (true) {
+  case: {
+    1
+  }
+}
 class Test2 extends XPathExpression {
   static prop = 1;
   prop = []
@@ -12,6 +17,7 @@ class Test2 extends XPathExpression {
     const obj = {
       [`aaa${...prop[1]}`]: param().a
     }
+
 
     process.exit
     __dirname

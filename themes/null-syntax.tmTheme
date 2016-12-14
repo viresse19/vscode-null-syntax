@@ -113,7 +113,6 @@
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
         punctuation.definition.sequence.item
-
       </string>
         <key>settings</key>
         <dict>
@@ -132,7 +131,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage, storage.type, storage.type.function</string>
+        <string>storage, storage.type, storage.type.function, meta.annotation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -225,7 +224,8 @@
         meta.punctuation, string.quoted.punctuation,
         string.template.punctuation, meta.delimiter,
         punctuation.accessor, punctuation.separator,
-        markup.heading
+        markup.heading, punctuation.definition.switch-statement,
+        import.keyword.control.from
       </string>
         <key>settings</key>
         <dict>
