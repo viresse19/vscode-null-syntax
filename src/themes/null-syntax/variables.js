@@ -17,7 +17,7 @@ export const colors = {
   shade  : '#a0a0a0',
   shade1 : '#909090',
   shade2 : '#707070',
-  shade3 : '#505050',
+  shade3 : '#4a4a4a',
 }
 
 export const elements = {
@@ -26,14 +26,16 @@ export const elements = {
   keyword         : colors.red,
   keywordControl  : colors.red,
 
-  terminator      : colors.shade2,
-  delimiter       : colors.shade1,
-  brace           : colors.shade2,
-  string          : colors.cyan,
-  regexp          : colors.blue,
-  quote           : colors.shade1,
-  comment         : colors.purple,
-  commentStorage  : colors.shade,
+  terminator         : colors.shade3,
+  delimiter          : colors.shade2,
+  brace              : colors.shade2,
+  block              : colors.shade3,
+  string             : colors.cyan,
+  regexp             : colors.blue,
+  quote              : colors.shade1,
+  comment            : colors.purple,
+  commentPunctuation : C(colors.shade2, C(colors.comment)).hexString(),
+  commentStorage     : colors.shade,
 
   function        : colors.orange,
 

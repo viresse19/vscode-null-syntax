@@ -41,15 +41,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>comment, punctuation.definition.comment</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#aca6c9</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>
         attribute-name, property-name,
         object-literal.key, json.property-name,
@@ -211,6 +202,23 @@
       </dict>
       <dict>
         <key>scope</key>
+        <string>
+        punctuation.definition.objectliteral.var,
+        punctuation.definition.block.objectliteral.object.member,
+        punctuation.definition.array.literal.brace.square,
+        punctuation.definition.export.default.objectliteral,
+        punctuation.definition.export.default.array
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>bold</string>
+          <key>foreground</key>
+          <string>#e79d8d</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
         <string>regex</string>
         <key>settings</key>
         <dict>
@@ -225,7 +233,14 @@
         string.template.punctuation, meta.delimiter,
         punctuation.accessor, punctuation.separator,
         markup.heading, punctuation.definition.switch-statement,
-        import.keyword.control.from
+        import.keyword.control.from,
+        key.template.expression.template-expression,
+        punctuation.definition.string.quoted.begin,
+        punctuation.definition.string.template.begin,
+        punctuation.definition.string.quoted.end,
+        punctuation.definition.string.template.end,
+        punctuation.definition.parameters.begin,
+        punctuation.definition.parameters.end
       </string>
         <key>settings</key>
         <dict>
@@ -236,6 +251,35 @@
       <dict>
         <key>scope</key>
         <string>punctuation.terminator</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#4a4a4a</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#aca6c9</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        punctuation.definition.comment.double-slash,
+        punctuation.definition.comment,
+        block.punctuation.definition.comment,
+        export.default.punctuation.definition.comment,
+        export.default.block.punctuation.definition.comment,
+        export.default.punctuation.definition.comment.documentation,
+        block.export.default.punctuation.definition.comment,
+        block.export.default.block.punctuation.definition.comment,
+        block.export.default.punctuation.definition.comment.documentation,
+        punctuation.definition.comment.documentation
+      </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>

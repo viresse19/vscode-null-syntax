@@ -36,12 +36,6 @@ export default {
     //   settings: { foreground: elements.shade }
     // },
 
-    // COMMENTS
-    {
-      scope: 'comment, punctuation.definition.comment',
-      settings: { foreground: elements.comment }
-    },
-
     // PROPS (ASSIGNMENT / WRITE / GENERIC)
 
     {
@@ -98,7 +92,6 @@ export default {
       scope: 'meta.brace, braces.without-arguments.arguments',
       settings: { foreground: elements.brace }
     },
-
     {
       scope: 'storage, storage.type, storage.type.function, meta.annotation',
       settings: { foreground: elements.storage }
@@ -158,17 +151,33 @@ export default {
       settings: { fontStyle: 'bold' }
     },
     {
+      scope: `
+        punctuation.definition.objectliteral.var,
+        punctuation.definition.block.objectliteral.object.member,
+        punctuation.definition.array.literal.brace.square,
+        punctuation.definition.export.default.objectliteral,
+        punctuation.definition.export.default.array
+      `,
+      settings: { fontStyle: 'bold', foreground: elements.keyword }
+    },
+    {
       scope: 'regex',
       settings: { foreground: elements.regexp }
     },
-
     {
       scope: `
         meta.punctuation, string.quoted.punctuation,
         string.template.punctuation, meta.delimiter,
         punctuation.accessor, punctuation.separator,
         markup.heading, punctuation.definition.switch-statement,
-        import.keyword.control.from
+        import.keyword.control.from,
+        key.template.expression.template-expression,
+        punctuation.definition.string.quoted.begin,
+        punctuation.definition.string.template.begin,
+        punctuation.definition.string.quoted.end,
+        punctuation.definition.string.template.end,
+        punctuation.definition.parameters.begin,
+        punctuation.definition.parameters.end
       `,
       settings: { foreground: elements.punctuation }
     },
@@ -176,6 +185,36 @@ export default {
     {
       scope: 'punctuation.terminator',
       settings: { foreground: elements.terminator }
+    },
+
+    // COMMENTS
+    /**
+     * asdasd
+     */
+
+    /*
+
+    asdasd // ${}
+    */
+
+    {
+      scope: `comment`,
+      settings: { foreground: elements.comment }
+    },
+    {
+      scope: `
+        punctuation.definition.comment.double-slash,
+        punctuation.definition.comment,
+        block.punctuation.definition.comment,
+        export.default.punctuation.definition.comment,
+        export.default.block.punctuation.definition.comment,
+        export.default.punctuation.definition.comment.documentation,
+        block.export.default.punctuation.definition.comment,
+        block.export.default.block.punctuation.definition.comment,
+        block.export.default.punctuation.definition.comment.documentation,
+        punctuation.definition.comment.documentation
+      `,
+      settings: { foreground: elements.commentPunctuation }
     },
   ],
 }
