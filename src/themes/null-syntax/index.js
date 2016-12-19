@@ -157,7 +157,7 @@ export default {
         punctuation.definition.export.default.objectliteral,
         array.literal.brace.square
       `,
-      settings: { fontStyle: 'bold', foreground: elements.keyword }
+      settings: { fontStyle: 'bold', foreground: elements.dataStructures }
     },
     {
       scope: 'regex',
@@ -187,15 +187,6 @@ export default {
     },
 
     // COMMENTS
-    /**
-     * asdasd
-     */
-
-    /*
-
-    asdasd // ${}
-    */
-
     {
       scope: `comment`,
       settings: { foreground: elements.comment }

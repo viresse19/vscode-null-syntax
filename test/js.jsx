@@ -28,7 +28,7 @@ const obj = {
 
 class Test2 extends XPathExpression {
   static prop = 1;
-  prop = []
+  prop = [];
 
   fn(param, ...params) { param() }
 
