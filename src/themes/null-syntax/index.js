@@ -154,9 +154,8 @@ export default {
       scope: `
         punctuation.definition.objectliteral.var,
         punctuation.definition.block.objectliteral.object.member,
-        punctuation.definition.array.literal.brace.square,
         punctuation.definition.export.default.objectliteral,
-        punctuation.definition.export.default.array
+        array.literal.brace.square
       `,
       settings: { fontStyle: 'bold', foreground: elements.keyword }
     },

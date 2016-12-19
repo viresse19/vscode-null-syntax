@@ -10,7 +10,9 @@ export default {
 
 }
 
-export default [ ]
+export default [
+  { }
+]
 
 let test = arr[0][1];
 prop = []
