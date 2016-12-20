@@ -18,7 +18,9 @@
     "babel-watch": "^2.0.3",
     "color": "^0.11.4",
     "plist": "^2.0.1",
-    "yargs": "^6.3.0"
+    "yargs": "^6.3.0",
+    "babel-register": "^6.18.0",
+    "nodemon": "^1.11.0"
   },
   "categories": [
     "Themes"
@@ -35,9 +37,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nfour/vscode-null-syntax"
-  },
-  "devDependencies": {
-    "babel-register": "^6.18.0",
-    "nodemon": "^1.11.0"
   }
 }
