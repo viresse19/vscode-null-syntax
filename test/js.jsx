@@ -35,9 +35,9 @@ class Test2 extends XPathExpression {
   async fn(param, ...params) { param(aaaa) }
 
   fn = async ({ a = 1.3331231, b: { c } } = { a: 0x012331 }) => {
-    const obj = {
+    const obj = fn({
       [`aaa${prop[1]}`]: param().a
-    }
+    })
 
     const arr = [
       1, 2, 3,

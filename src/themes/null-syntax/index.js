@@ -153,6 +153,7 @@ export default {
     {
       scope: `
         punctuation.definition.objectliteral.var,
+        punctuation.definition.objectliteral.function,
         punctuation.definition.block.objectliteral.object.member,
         punctuation.definition.export.default.objectliteral,
         array.literal.brace.square
