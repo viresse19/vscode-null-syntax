@@ -5,6 +5,7 @@
   "description": "Null Syntax",
   "publisher": "nfour",
   "scripts": {
+    "build": "node -r babel-register ./src/build",
     "start": "nodemon -w ./src -x 'node -r babel-register' ./src/build"
   },
   "engines": {
@@ -31,7 +32,11 @@
       }
     ]
   },
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfour/vscode-null-syntax"
+  },
+  "devDependencies": {
     "babel-register": "^6.18.0",
     "nodemon": "^1.11.0"
   }
