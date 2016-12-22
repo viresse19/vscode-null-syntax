@@ -202,24 +202,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>
-        punctuation.definition.objectliteral.var,
-        punctuation.definition.objectliteral.function,
-        punctuation.definition.objectliteral.method,
-        punctuation.definition.block.objectliteral.object.member,
-        punctuation.definition.export.default.objectliteral,
-        array.literal.brace.square
-      </string>
-        <key>settings</key>
-        <dict>
-          <key>fontStyle</key>
-          <string>bold</string>
-          <key>foreground</key>
-          <string>#abc78a</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>regex</string>
         <key>settings</key>
         <dict>
@@ -241,7 +223,11 @@
         punctuation.definition.string.quoted.end,
         punctuation.definition.string.template.end,
         punctuation.definition.parameters.begin,
-        punctuation.definition.parameters.end
+        punctuation.definition.parameters.end,
+        punctuation.definition.parameters.begin.objectliteral,
+        punctuation.definition.parameters.end.objectliteral,
+        punctuation.definition.begin.objectliteral.template,
+        punctuation.definition.end.objectliteral.template
       </string>
         <key>settings</key>
         <dict>

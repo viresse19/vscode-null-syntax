@@ -150,17 +150,17 @@ export default {
       `,
       settings: { fontStyle: 'bold' }
     },
-    {
-      scope: `
-        punctuation.definition.objectliteral.var,
-        punctuation.definition.objectliteral.function,
-        punctuation.definition.objectliteral.method,
-        punctuation.definition.block.objectliteral.object.member,
-        punctuation.definition.export.default.objectliteral,
-        array.literal.brace.square
-      `,
-      settings: { fontStyle: 'bold', foreground: elements.dataStructures }
-    },
+    // {
+    //   scope: `
+    //     punctuation.definition.objectliteral.var,
+    //     punctuation.definition.objectliteral.function,
+    //     punctuation.definition.objectliteral.method,
+    //     punctuation.definition.block.objectliteral,
+    //     punctuation.definition.export.default.objectliteral,
+    //     array.literal.brace.square
+    //   `,
+    //   settings: { fontStyle: 'bold', foreground: elements.dataStructures }
+    // },
     {
       scope: 'regex',
       settings: { foreground: elements.regexp }
@@ -178,7 +178,11 @@ export default {
         punctuation.definition.string.quoted.end,
         punctuation.definition.string.template.end,
         punctuation.definition.parameters.begin,
-        punctuation.definition.parameters.end
+        punctuation.definition.parameters.end,
+        punctuation.definition.parameters.begin.objectliteral,
+        punctuation.definition.parameters.end.objectliteral,
+        punctuation.definition.begin.objectliteral.template,
+        punctuation.definition.end.objectliteral.template
       `,
       settings: { foreground: elements.punctuation }
     },

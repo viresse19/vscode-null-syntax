@@ -6,16 +6,33 @@ switch (true) {
   }
 }
 
+function mockProcessCwd(directory) {
+  Object.defineProperty(process, 'cwd', {
+    value: () => `${directory}`,
+  });
+}
+
 export default {
 
 }
 
 export default [
-  { }
+  {
+    "ayyylmao": {
+      wew: {
+        a: function()  {
+          return {
+
+          }
+        },
+        b: () => { 1 },
+      }
+    }
+  }
 ]
 
 let test = arr[0][1];
-prop = []
+prop = [];
 const arr = [
   1, 2, 3,
   4, 5, 6,
