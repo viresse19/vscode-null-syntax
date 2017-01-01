@@ -122,7 +122,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage, storage.type, storage.type.function, meta.annotation</string>
+        <string>storage, storage.type, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -270,7 +270,29 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#707070</string>
+          <string>#646271</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.annotation, meta.annotation.support
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#646271</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.annotation.support.primitive
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>underline</string>
         </dict>
       </dict>
     </array>

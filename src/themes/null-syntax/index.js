@@ -93,7 +93,7 @@ export default {
       settings: { foreground: elements.brace }
     },
     {
-      scope: 'storage, storage.type, storage.type.function, meta.annotation',
+      scope: 'storage, storage.type, storage.type.function',
       settings: { foreground: elements.storage }
     },
 
@@ -150,6 +150,9 @@ export default {
       `,
       settings: { fontStyle: 'bold' }
     },
+
+    // // Disabled because it can't be guaranteed yet
+    //
     // {
     //   scope: `
     //     punctuation.definition.objectliteral.var,
@@ -161,6 +164,7 @@ export default {
     //   `,
     //   settings: { fontStyle: 'bold', foreground: elements.dataStructures }
     // },
+
     {
       scope: 'regex',
       settings: { foreground: elements.regexp }
@@ -212,5 +216,17 @@ export default {
       `,
       settings: { foreground: elements.commentPunctuation }
     },
+    {
+      scope: `
+        meta.annotation, meta.annotation.support
+      `,
+      settings: { foreground: elements.commentPunctuation }
+    },
+    {
+      scope: `
+        meta.annotation.support.primitive
+      `,
+      settings: { fontStyle: "underline" }
+    }
   ],
 }
