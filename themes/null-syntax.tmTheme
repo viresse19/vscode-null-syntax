@@ -276,7 +276,9 @@
       <dict>
         <key>scope</key>
         <string>
-        meta.annotation, meta.annotation.support
+        meta.annotation, meta.annotation.support,
+        meta.support.primitive.return
+
       </string>
         <key>settings</key>
         <dict>
@@ -287,7 +289,7 @@
       <dict>
         <key>scope</key>
         <string>
-        meta.annotation.support.primitive
+        meta.annotation.support.primitive,
       </string>
         <key>settings</key>
         <dict>

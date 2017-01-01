@@ -218,13 +218,15 @@ export default {
     },
     {
       scope: `
-        meta.annotation, meta.annotation.support
+        meta.annotation, meta.annotation.support,
+        meta.support.primitive.return
+
       `,
       settings: { foreground: elements.commentPunctuation }
     },
     {
       scope: `
-        meta.annotation.support.primitive
+        meta.annotation.support.primitive,
       `,
       settings: { fontStyle: "underline" }
     }
