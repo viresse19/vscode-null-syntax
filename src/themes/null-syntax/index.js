@@ -219,7 +219,7 @@ export default {
     {
       scope: `
         meta.annotation, meta.annotation.support,
-        meta.support.primitive.return
+        meta.support.primitive.return, meta.type.annotation.entity
 
       `,
       settings: { foreground: elements.commentPunctuation }

@@ -277,7 +277,7 @@
         <key>scope</key>
         <string>
         meta.annotation, meta.annotation.support,
-        meta.support.primitive.return
+        meta.support.primitive.return, meta.type.annotation.entity
 
       </string>
         <key>settings</key>
