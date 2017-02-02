@@ -226,7 +226,7 @@ export default {
     },
     {
       scope: `
-        meta.annotation.support.primitive,
+        meta.annotation.support.primitive
       `,
       settings: { fontStyle: "underline" }
     }

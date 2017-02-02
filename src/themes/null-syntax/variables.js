@@ -14,7 +14,7 @@ export const colors = {
   cyan       : '#a1dbe3',
   blue       : '#96b3f2',
   purple     : '#aca6c9',
-  darkPurple : '#646271',
+  darkPurple : '#716e89',
 
   shade  : '#a0a0a0',
   shade1 : '#909090',
