@@ -58,7 +58,7 @@ export default {
 
 
     {
-      scope: 'token.string, token.numeric, token.constant.numeric.decimal',
+      scope: 'string, numeric',
       settings: { foreground: elements.string }
     },
 
@@ -171,7 +171,7 @@ export default {
     },
     {
       scope: `
-        meta.punctuation, string.quoted.punctuation,
+        punctuation, string.quoted.punctuation,
         string.template.punctuation, meta.delimiter,
         punctuation.accessor, punctuation.separator,
         markup.heading, punctuation.definition.switch-statement,
