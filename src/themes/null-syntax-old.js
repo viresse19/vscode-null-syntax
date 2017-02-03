@@ -31,18 +31,11 @@ export default {
       }
     },
 
-    // {
-    //   scope: 'token',
-    //   settings: { foreground: elements.shade }
-    // },
-
     // PROPS (ASSIGNMENT / WRITE / GENERIC)
 
     {
       scope: `
-        attribute-name, property-name,
-        object-literal.key, json.property-name,
-        yaml.entity.name.tag
+        meta.object-literal.key
       `,
       settings: { foreground: elements.propWrite }
     },
@@ -50,8 +43,8 @@ export default {
     // PROPS (DESTRUCTURING / READ)
     {
       scope: `
-        variable.property.object.parameter.object-binding-pattern,
-        property.object.object-binding-pattern-variable
+        meta.object-binding-pattern variable.object.property,
+        meta.array-binding-pattern variable.object.property
       `,
       settings: { foreground: elements.propRead }
     },
@@ -63,18 +56,11 @@ export default {
     },
 
     {
-      scope: 'support.function, entity.name.function',
-      settings: { foreground: elements.function }
-    },
-
-    {
       scope: `
-        token.variable, support, variable.template, constant.template, entity.name,
-        token.type.entity.name.new.module,
-        variable.support.dom, entity.inherited-class, constant,
-        support.variable.property
+        support.function,
+        entity.name.function
       `,
-      settings: { foreground: colors.fore }
+      settings: { foreground: elements.function }
     },
 
     {
@@ -131,22 +117,8 @@ export default {
 
     {
       scope: `
-        var-single-variable,
-        variable.parameters.parameter, import.variable.readwrite,
-        variable.parameter.arrow.declaration,
-        type.entity.name.class,
-        type.entity.name.expr.new,
-        class.definition.field.property.variable.object,
-        class.definition.property.entity.function,
-        class.definition.name.method.entity.function,
-        definition.entity.name.function,
-        variable.readwrite.var.expr.object-binding-pattern-variable,
-        attribute-name, property-name,
-        object-literal.key,
-        variable.property.object.parameter.object-binding-pattern,
-        property.object.object-binding-pattern-variable,
-        markup.heading.section,
-        yaml.entity.name
+        meta.definition.variable,
+        variable.parameter
       `,
       settings: { fontStyle: 'bold' }
     },
@@ -203,30 +175,13 @@ export default {
     },
     {
       scope: `
-        punctuation.definition.comment.double-slash,
-        punctuation.definition.comment,
-        block.punctuation.definition.comment,
-        export.default.punctuation.definition.comment,
-        export.default.block.punctuation.definition.comment,
-        export.default.punctuation.definition.comment.documentation,
-        block.export.default.punctuation.definition.comment,
-        block.export.default.block.punctuation.definition.comment,
-        block.export.default.punctuation.definition.comment.documentation,
-        punctuation.definition.comment.documentation
+        meta.type.annotation
       `,
       settings: { foreground: elements.commentPunctuation }
     },
     {
       scope: `
-        meta.annotation, meta.annotation.support,
-        meta.support.primitive.return, meta.type.annotation.entity
-
-      `,
-      settings: { foreground: elements.commentPunctuation }
-    },
-    {
-      scope: `
-        meta.annotation.support.primitive
+        annotation support.type.primitive
       `,
       settings: { fontStyle: "underline" }
     }

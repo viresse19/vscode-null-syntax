@@ -1,8 +1,17 @@
 import C from 'color'
 
 export const colors = {
-  fore   : '#dbdbdb',
-  back   : '#1c1b1a',
+  fore  : '#d2d2d2',
+  fore2 : '#ddd',
+
+  foregrounds: [
+    "#e0e0e0",
+    "#dadada",
+    "#cacaca",
+    "#bababa",
+  ],
+
+  back  : '#1c1b1a',
 
   red        : '#e79d8d',
   orange     : '#fdbd7d',
@@ -16,9 +25,9 @@ export const colors = {
   purple     : '#aca6c9',
   darkPurple : '#716e89',
 
-  shade  : '#a0a0a0',
-  shade1 : '#909090',
-  shade2 : '#707070',
+  shade  : '#9f9f9f',
+  shade1 : '#949494',
+  shade2 : '#727272',
   shade3 : '#4a4a4a',
 }
 
@@ -27,18 +36,17 @@ export const elements = {
   operator        : colors.red,
   keyword         : colors.red,
   keywordControl  : colors.red,
-  dataStructures  : colors.grass,
+  dataStructures  : colors.shade,
 
-  terminator         : colors.shade3,
-  delimiter          : colors.shade2,
-  brace              : colors.shade2,
-  block              : colors.shade3,
-  string             : colors.cyan,
-  regexp             : colors.blue,
-  quote              : colors.shade1,
-  comment            : colors.purple,
-  commentPunctuation : colors.darkPurple,
-  commentStorage     : colors.shade,
+  terminator : colors.shade3,
+  delimiter  : colors.shade2,
+  brace      : colors.shade2,
+  block      : colors.shade3,
+  string     : colors.cyan,
+  regexp     : colors.blue,
+  quote      : colors.shade1,
+  comment    : colors.purple,
+  annotation : colors.darkPurple,
 
   function        : colors.orange,
 
@@ -47,6 +55,7 @@ export const elements = {
   supportType     : colors.red,
   supportFunction : colors.lime,
   storage         : colors.shade,
+  storage2        : colors.shade1,
   entity          : colors.shade,
   constant        : colors.teal,
   class           : colors.teal,
@@ -60,5 +69,5 @@ export const elements = {
   findHighlight   : colors.yellow + '40',
   guide           : colors.fore + '35',
   activeGuide     : colors.fore + '50',
-  invisibles      : colors.fore + '10',
+  invisibles      : colors.fore + '05',
 }

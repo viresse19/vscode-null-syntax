@@ -18,9 +18,9 @@
           <key>caret</key>
           <string>#ffffff</string>
           <key>foreground</key>
-          <string>#dbdbdb</string>
+          <string>#dadada</string>
           <key>invisibles</key>
-          <string>#dbdbdb10</string>
+          <string>#d2d2d205</string>
           <key>selection</key>
           <string>#6fb05030</string>
           <key>selectionBorder</key>
@@ -28,9 +28,9 @@
           <key>lineHighlight</key>
           <string>#181716</string>
           <key>guide</key>
-          <string>#dbdbdb35</string>
+          <string>#d2d2d235</string>
           <key>activeGuide</key>
-          <string>#dbdbdb50</string>
+          <string>#d2d2d250</string>
           <key>findHighlight</key>
           <string>#e2d29440</string>
           <key>bracketsForeground</key>
@@ -42,31 +42,40 @@
       <dict>
         <key>scope</key>
         <string>
-        attribute-name, property-name,
-        object-literal.key, json.property-name,
-        yaml.entity.name.tag
+        meta.class meta.field.declaration meta.definition.property variable.object.property,
+
+        meta.object-literal.key,
+        support.type.property-name.json,
+        entity.name.tag.yaml
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#e2d294</string>
+          <key>fontStyle</key>
+          <string>bold</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
         <string>
-        variable.property.object.parameter.object-binding-pattern,
-        property.object.object-binding-pattern-variable
+        meta.object-binding-pattern-variable variable.object.property,
+        meta.parameter.object-binding-pattern variable.object.property,
+        meta.array-binding-pattern-variable variable.object.property,
+        meta.parameters variable.object.property
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a0a0a0</string>
+          <string>#9f9f9f</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
-        <string>string, numeric</string>
+        <string>
+        string,
+        constant.numeric
+      </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -75,7 +84,32 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>support.function, entity.name.function</string>
+        <string>
+        meta.template.expression
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#dadada</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        regex
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#96b3f2</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        support.function,
+        entity.name.function
+      </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -85,22 +119,10 @@
       <dict>
         <key>scope</key>
         <string>
-        token.variable, support, variable.template, constant.template, entity.name,
-        token.type.entity.name.new.module,
-        variable.support.dom, entity.inherited-class, constant,
-        support.variable.property
-      </string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#dbdbdb</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>
-        keyword.operator, json.punctuation.separator,
-        punctuation.separator.key, punctuation.separator.key-value,
+        keyword.operator,
+        json.punctuation.separator,
+        punctuation.separator.key,
+        punctuation.separator.key-value,
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
         punctuation.definition.sequence.item
@@ -113,26 +135,10 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.brace, braces.without-arguments.arguments</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#707070</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>storage, storage.type, storage.type.function</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#a0a0a0</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>
-        keyword.reserved, keyword.control, constant.language.import-export-all,
+        keyword.reserved,
+        keyword.control,
+        constant.language.import-export-all,
         css.keyword.other.unit
       </string>
         <key>settings</key>
@@ -144,8 +150,35 @@
       <dict>
         <key>scope</key>
         <string>
-        language.this, language.super, support.builtin, variable.object.support.node,
-        support.process, constant.support, support.class, constant.language,
+        storage
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#9f9f9f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.var storage.type.js
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#949494</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        variable.language.this,
+        variable.language.super,
+        support.class,
+        support.variable.object.process,
+        support.variable.object.node,
+        support.variable.property.js,
+        constant.language,
         markup.heading.section
       </string>
         <key>settings</key>
@@ -156,7 +189,10 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>language</string>
+        <string>
+        variable.language,
+        constant.language
+      </string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -166,33 +202,48 @@
       <dict>
         <key>scope</key>
         <string>
-        function-call, entity.name.function-call, definition.entity.name.function, tag.entity.name
+        meta.definition.variable,
+        variable.parameter
       </string>
         <key>settings</key>
         <dict>
+          <key>fontStyle</key>
+          <string>bold</string>
           <key>foreground</key>
-          <string>#fdbd7d</string>
+          <string>#e0e0e0</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
         <string>
-        var-single-variable,
-        variable.parameters.parameter, import.variable.readwrite,
-        variable.parameter.arrow.declaration,
-        type.entity.name.class,
-        type.entity.name.expr.new,
-        class.definition.field.property.variable.object,
-        class.definition.property.entity.function,
-        class.definition.name.method.entity.function,
-        definition.entity.name.function,
-        variable.readwrite.var.expr.object-binding-pattern-variable,
-        attribute-name, property-name,
-        object-literal.key,
-        variable.property.object.parameter.object-binding-pattern,
-        property.object.object-binding-pattern-variable,
-        markup.heading.section,
-        yaml.entity.name
+        punctuation.definition.binding-pattern,
+        meta.object-literal.key meta.brace.square,
+        punctuation.definition.template-expression
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#727272</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.brace,
+        punctuation.definition.parameters.begin,
+        punctuation.definition.parameters.end
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#727272</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        punctuation.definition.parameters.begin,
+        punctuation.definition.parameters.end
       </string>
         <key>settings</key>
         <dict>
@@ -202,51 +253,32 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>regex</string>
+        <string>
+        meta.type.annotation,
+        meta.type.declaration
+      </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#96b3f2</string>
+          <string>#716e89</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
         <string>
-        punctuation, string.quoted.punctuation,
-        string.template.punctuation, meta.delimiter,
-        punctuation.accessor, punctuation.separator,
-        markup.heading, punctuation.definition.switch-statement,
-        import.keyword.control.from,
-        key.template.expression.template-expression,
-        punctuation.definition.string.quoted.begin,
-        punctuation.definition.string.template.begin,
-        punctuation.definition.string.quoted.end,
-        punctuation.definition.string.template.end,
-        punctuation.definition.parameters.begin,
-        punctuation.definition.parameters.end,
-        punctuation.definition.parameters.begin.objectliteral,
-        punctuation.definition.parameters.end.objectliteral,
-        punctuation.definition.begin.objectliteral.template,
-        punctuation.definition.end.objectliteral.template
+        support.type.primitive
       </string>
         <key>settings</key>
         <dict>
-          <key>foreground</key>
-          <string>#909090</string>
+          <key>fontStyle</key>
+          <string>italic</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.terminator</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#4a4a4a</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>comment</string>
+        <string>
+        comment
+      </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -256,45 +288,25 @@
       <dict>
         <key>scope</key>
         <string>
-        punctuation.definition.comment.double-slash,
-        punctuation.definition.comment,
-        block.punctuation.definition.comment,
-        export.default.punctuation.definition.comment,
-        export.default.block.punctuation.definition.comment,
-        export.default.punctuation.definition.comment.documentation,
-        block.export.default.punctuation.definition.comment,
-        block.export.default.block.punctuation.definition.comment,
-        block.export.default.punctuation.definition.comment.documentation,
-        punctuation.definition.comment.documentation
+        punctuation,
+        markup.heading,
+        keywork.control.from
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#716e89</string>
+          <string>#949494</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
         <string>
-        meta.annotation, meta.annotation.support,
-        meta.support.primitive.return, meta.type.annotation.entity
-
+        punctuation.terminator
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#716e89</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>
-        meta.annotation.support.primitive
-      </string>
-        <key>settings</key>
-        <dict>
-          <key>fontStyle</key>
-          <string>underline</string>
+          <string>#4a4a4a</string>
         </dict>
       </dict>
     </array>

@@ -1,49 +1,206 @@
-class Test extends A {}
+// @flow
+/**
+ *
+ * IMPORT & EXPORTS
+ *
+ */
 
-switch (true) {
-  case: {
-    1
+import { A as b, c } from './asdasd';
+import type A from './a'
+import { type C, b } from 'b'
+
+export default async function test() {}
+export default {
+  "a": 1,
+  b: {
+    1: "c",
+    fn() {
+      return 1;
+    },
+    fn: function () {
+
+    },
+    fn: () => {},
   }
 }
 
-function mockProcessCwd(directory) {
-  Object.defineProperty(process, 'cwd', {
-    value: () => `${directory}`,
-  });
-}
+export const a = { c: 1 }
 
-export default {
 
-}
+/**
+ * FLOW
+ */
 
-export default [
+
+type La = string | { b?: La }
+const a: { c?: string } | boolean = a;
+function<T>(c: Array<T>): T {}
+
+/**
+ * DECLARATION STRUCTURES
+ */
+
+const a = []
+const b = a[1][2]
+const c = [
   {
-    "ayyylmao": {
-      wew: {
-        a: function()  {
-          return {
-
-          }
-        },
-        b: () => { 1 },
-      }
+    a() {
+      let b = { a: [] }
+      return a[1]
     }
   }
 ]
+const d = {a:1}
 
-let test = arr[0][1];
-prop = [];
+/**
+ *
+ * CONDITIONALS
+ *
+ */
+
+
+switch (true) {
+  case: {
+    return 1;
+  }
+}
+
+if (a === 2) {
+  1
+} else
+if (5) throw 1;
+
+try { a } catch (err) {}
+
+
+/**
+ *
+ * VARIABLE DECLARATIONS
+ *
+ */
+
+const a = a;
+const b = aaa.bbb.ccc.d().aa.bb.cc
+
+
+class Test extends Test {}
+class test extends test {}
+function a() {}
+const a = () => {}
+const A = (a, b) => 1
+const a = [ ...a ];
+let a = arr[0][1];
+
 const arr = [
-  1, 2, 3,
-  4, 5, 6,
-  `${wew[1]}`
+  1, 2, (a) => 1,
+  4, 5, "6",
 ];
+
+class InAClass {
+  static a = 1;
+  static b;
+  c = 1;
+
+  fn() {}
+  fn = () => 1
+  fn = function() {}
+
+  constructor() {
+    this.a = 1;
+    const a = () => { return 1.3331231; }
+  }
+}
+
+/**
+ *
+ * CONSTANTS, GLOBALS
+ *
+ */
+
+String
+Object.keys()
+console.info
+process
+__dirname
+true
+null
+Infinity
+class A {
+  constructor() {
+    super()
+    this.a = 1;
+  }
+}
+
+
+/**
+ *
+ * TEMPLATES, STRINGS & COMPUTED PROPS
+ *
+ */
+
+const str = "aaa${s}"
+const str = 'asdasd'
+const str = `aaa${aaa}aaa`
 
 const obj = {
   [`aaa${prop[1]}`]: param().a
 }
 
-class Test2 extends XPathExpression {
+const a = arr[`aaa ${a.c.d("w", 1.33)} aaa`]
+
+
+/**
+ *
+ * DESTRUCTURING
+ *
+ */
+
+const three = 1
+const assignment = { one: { two: three } }
+const { one: { two: three } } = assignment;
+const [a, { one: { two: three } }] = [1, assignment];
+
+const fn = ([a, {c: d}], { one: { two: three = 1 } } = { one: { two: {} } }) => {
+  return three;
+}
+
+const fn = (
+  {
+    one: {
+      two: three = 1
+    }
+  } = {
+    one: {
+      two: {}
+    }
+  }
+) => {
+  return three;
+}
+
+/**
+ *
+ * FUNCTIONS
+ *
+ */
+
+const fn = () => {
+  fn()
+  method.fn()
+  fn(fn(method.fn(1, fn())))
+  fn(
+    fn(
+      method.fn()
+    )
+  )
+}
+
+console.log()
+console.log
+
+
+class Test2 extends s {
   static prop = 1;
   prop = [];
 
@@ -53,7 +210,7 @@ class Test2 extends XPathExpression {
 
   fn = async ({ a = 1.3331231, b: { c } } = { a: 0x012331 }) => {
     const obj = fn({
-      [`aaa${prop[1]}`]: param().a
+      [`aaa${prop[`a${"test"}a`]}`]: param().a
     })
 
     const arr = [
@@ -64,7 +221,7 @@ class Test2 extends XPathExpression {
 
     let test = arr[0][1];
 
-
+    process.env.NODE_ENV
     process.exit
     __dirname
 
