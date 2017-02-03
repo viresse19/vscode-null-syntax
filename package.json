@@ -1,8 +1,8 @@
 {
   "name": "null-syntax",
   "displayName": "Null Syntax",
-  "version": "0.1.5",
-  "description": "Null Syntax",
+  "version": "0.2.0",
+  "description": "Syntax theme which highlight control flow",
   "publisher": "nfour",
   "scripts": {
     "build": "node -r babel-register ./src/build",

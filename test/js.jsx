@@ -81,6 +81,7 @@ try { a } catch (err) {}
 
 const a = a;
 const b = aaa.bbb.ccc.d().aa.bb.cc
+const b = aaa['s'].bbb.ccc.d().aa.bb.cc
 
 
 class Test extends Test {}
@@ -90,11 +91,13 @@ const a = () => {}
 const A = (a, b) => 1
 const a = [ ...a ];
 let a = arr[0][1];
-
+new Test()
+Test.a
 const arr = [
   1, 2, (a) => 1,
   4, 5, "6",
 ];
+const a = 1;
 
 class InAClass {
   static a = 1;
@@ -106,6 +109,7 @@ class InAClass {
   fn = function() {}
 
   constructor() {
+    a.b = 1;
     this.a = 1;
     const a = () => { return 1.3331231; }
   }
