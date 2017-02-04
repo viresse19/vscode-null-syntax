@@ -1,7 +1,7 @@
 {
   "name": "null-syntax",
   "displayName": "Null Syntax",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Syntax theme which highlight control flow",
   "publisher": "nfour",
   "scripts": {
