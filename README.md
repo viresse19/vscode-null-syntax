@@ -2,6 +2,8 @@
 
 A theme which focuses on fading punctuation and highlighting control flow.
 
+![Null](http://i.imgur.com/lxRxRVc.png)
+
 ## CUSTOMIZE
 
 - `yarn start`
