@@ -147,7 +147,7 @@ export default {
       scope: `
         variable.language.this,
         variable.language.super,
-        support.class,
+        support.class.builtin,
         support.variable.object.process,
         support.variable.object.node,
         support.variable.property.js,
