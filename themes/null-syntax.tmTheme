@@ -43,10 +43,10 @@
         <key>scope</key>
         <string>
         meta.class meta.field.declaration meta.definition.property variable.object.property,
-
         meta.object-literal.key,
         support.type.property-name.json,
-        entity.name.tag.yaml
+        entity.name.tag.yaml,
+        entity.name.section.markdown
       </string>
         <key>settings</key>
         <dict>
@@ -74,7 +74,8 @@
         <key>scope</key>
         <string>
         string,
-        constant.numeric
+        constant.numeric,
+        markup.inline.raw.markdown
       </string>
         <key>settings</key>
         <dict>
@@ -125,7 +126,8 @@
         punctuation.separator.key-value,
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
-        punctuation.definition.sequence.item
+        punctuation.definition.sequence.item,
+        beginning.punctuation.definition.list.markdown
       </string>
         <key>settings</key>
         <dict>
@@ -203,7 +205,8 @@
         <key>scope</key>
         <string>
         meta.definition.variable,
-        variable.parameter
+        variable.parameter,
+        meta.import variable.other.readwrite.alias
       </string>
         <key>settings</key>
         <dict>
@@ -290,7 +293,7 @@
         <string>
         punctuation,
         markup.heading,
-        keywork.control.from
+        keyword.control.from
       </string>
         <key>settings</key>
         <dict>

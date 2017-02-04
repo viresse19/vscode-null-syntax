@@ -174,7 +174,8 @@ export default {
     {
       scope: `
         meta.definition.variable,
-        variable.parameter
+        variable.parameter,
+        meta.import variable.other.readwrite.alias
       `,
       settings: {
         fontStyle: 'bold',
@@ -269,7 +270,7 @@ export default {
       scope: `
         punctuation,
         markup.heading,
-        keywork.control.from
+        keyword.control.from
       `,
       settings: { foreground: elements.punctuation }
     },
