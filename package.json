@@ -2,7 +2,7 @@
   "name": "null-syntax",
   "displayName": "Null Syntax",
   "version": "0.2.4",
-  "description": "Syntax theme which highlight control flow",
+  "description": "A theme which fades punctuation & highlights control flow",
   "publisher": "nfour",
   "scripts": {
     "build": "node -r babel-register ./src/build",
