@@ -1,16 +1,9 @@
 # VSCODE NULL SYNTAX
 
-A syntax theme which hides structural noise & highlights control flow.
-
-## INSTALLATION
-
-```
-git clone git@github.com:nfour/vscode-null-syntax.git
-cd vscode-null-syntax
-yarn && yarn run build
-ln -s $PWD ~/.vscode/extensions
-```
+A theme which focuses on fading punctuation and highlighting control flow.
 
 ## CUSTOMIZE
 
-Just run `yarn start` and play with files. Reload your vscode to see changes.
+- `yarn start`
+- Modify `src/themes/*`
+- Reload a vscode window to see changes

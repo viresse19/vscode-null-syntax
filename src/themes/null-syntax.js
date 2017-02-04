@@ -31,7 +31,8 @@ export default {
         meta.class meta.field.declaration meta.definition.property variable.object.property,
         meta.object-literal.key,
         support.type.property-name.json,
-        entity.name.tag.yaml
+        entity.name.tag.yaml,
+        entity.name.section.markdown
       `,
       settings: {
         foreground: elements.propWrite,
@@ -58,7 +59,8 @@ export default {
     {
       scope: `
         string,
-        constant.numeric
+        constant.numeric,
+        markup.inline.raw.markdown
       `,
       settings: { foreground: elements.string }
     },
@@ -103,7 +105,8 @@ export default {
         punctuation.separator.key-value,
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
-        punctuation.definition.sequence.item
+        punctuation.definition.sequence.item,
+        beginning.punctuation.definition.list.markdown
       `,
       settings: { foreground: elements.operator }
     },
