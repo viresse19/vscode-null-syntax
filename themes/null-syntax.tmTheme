@@ -46,7 +46,8 @@
         meta.object-literal.key,
         support.type.property-name.json,
         entity.name.tag.yaml,
-        entity.name.section.markdown
+        entity.name.section.markdown,
+        meta.property-name.css
       </string>
         <key>settings</key>
         <dict>
@@ -109,7 +110,8 @@
         <key>scope</key>
         <string>
         support.function,
-        entity.name.function
+        entity.name.function,
+        meta.selector.css
       </string>
         <key>settings</key>
         <dict>

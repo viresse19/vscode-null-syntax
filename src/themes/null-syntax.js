@@ -32,7 +32,8 @@ export default {
         meta.object-literal.key,
         support.type.property-name.json,
         entity.name.tag.yaml,
-        entity.name.section.markdown
+        entity.name.section.markdown,
+        meta.property-name.css
       `,
       settings: {
         foreground: elements.propWrite,
@@ -89,7 +90,8 @@ export default {
     {
       scope: `
         support.function,
-        entity.name.function
+        entity.name.function,
+        meta.selector.css
       `,
       settings: { foreground: elements.function }
     },
