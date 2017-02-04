@@ -174,11 +174,7 @@ const fn = (
     one: {
       two: three = 1
     }
-  } = {
-    one: {
-      two: {}
-    }
-  }
+  } = { one: { two: {} } }
 ) => {
   return three;
 }
