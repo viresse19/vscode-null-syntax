@@ -11,7 +11,7 @@ export const colors = {
     "#bababa",
   ],
 
-  back  : '#1c1b1a',
+  back  : '#201f1f',
 
   red        : '#e79d8d',
   orange     : '#fdbd7d',

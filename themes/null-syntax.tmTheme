@@ -14,7 +14,7 @@
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>#1c1b1a</string>
+          <string>#201f1f</string>
           <key>caret</key>
           <string>#ffffff</string>
           <key>foreground</key>
@@ -26,7 +26,7 @@
           <key>selectionBorder</key>
           <string>#6fb05070</string>
           <key>lineHighlight</key>
-          <string>#181716</string>
+          <string>#1A1919</string>
           <key>guide</key>
           <string>#d2d2d235</string>
           <key>activeGuide</key>
@@ -47,7 +47,8 @@
         support.type.property-name.json,
         entity.name.tag.yaml,
         entity.name.section.markdown,
-        meta.property-name.css
+        meta.property-name.css,
+        entity.other.attribute-name
       </string>
         <key>settings</key>
         <dict>
@@ -111,7 +112,8 @@
         <string>
         support.function,
         entity.name.function,
-        meta.selector.css
+        meta.selector.css,
+        entity.name.tag
       </string>
         <key>settings</key>
         <dict>
