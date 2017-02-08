@@ -262,12 +262,36 @@
         <key>scope</key>
         <string>
         meta.type.annotation,
-        meta.type.declaration
+        meta.type.declaration,
+        meta.type.annotation variable.object.property
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#716e89</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        meta.type.annotation variable.parameter
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8B88A0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        keyword.operator.type.annotation,
+        keyword.operator.optional
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#949494</string>
         </dict>
       </dict>
       <dict>

@@ -242,9 +242,23 @@ export default {
     {
       scope: `
         meta.type.annotation,
-        meta.type.declaration
+        meta.type.declaration,
+        meta.type.annotation variable.object.property
       `,
       settings: { foreground: elements.annotation }
+    },
+    {
+      scope: `
+        meta.type.annotation variable.parameter
+      `,
+      settings: { foreground: elements.annotation2 }
+    },
+    {
+      scope: `
+        keyword.operator.type.annotation,
+        keyword.operator.optional
+      `,
+      settings: { foreground: elements.punctuation }
     },
 
     /**
