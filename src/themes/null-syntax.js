@@ -249,13 +249,14 @@ export default {
     },
     {
       scope: `
-        meta.type.annotation variable.parameter
+        meta.type.annotation variable.parameter,
+        meta.type.declaration variable.object.property
       `,
       settings: { foreground: elements.annotation2 }
     },
     {
       scope: `
-        keyword.operator.type.annotation,
+        keyword.operator.type,
         keyword.operator.optional
       `,
       settings: { foreground: elements.punctuation }
@@ -266,9 +267,10 @@ export default {
      */
     {
       scope: `
-        support.type.primitive
+        support.type.primitive,
+        support.type.builtin
       `,
-      settings: { fontStyle: "italic" }
+      settings: { foreground: elements.annotation2, fontStyle: "italic" }
     },
 
     /**

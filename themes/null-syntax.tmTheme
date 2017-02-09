@@ -274,18 +274,19 @@
       <dict>
         <key>scope</key>
         <string>
-        meta.type.annotation variable.parameter
+        meta.type.annotation variable.parameter,
+        meta.type.declaration variable.object.property
       </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8B88A0</string>
+          <string>#9693A9</string>
         </dict>
       </dict>
       <dict>
         <key>scope</key>
         <string>
-        keyword.operator.type.annotation,
+        keyword.operator.type,
         keyword.operator.optional
       </string>
         <key>settings</key>
@@ -297,10 +298,13 @@
       <dict>
         <key>scope</key>
         <string>
-        support.type.primitive
+        support.type.primitive,
+        support.type.builtin
       </string>
         <key>settings</key>
         <dict>
+          <key>foreground</key>
+          <string>#9693A9</string>
           <key>fontStyle</key>
           <string>italic</string>
         </dict>

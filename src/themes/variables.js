@@ -47,7 +47,7 @@ export const elements = {
   quote      : colors.shade1,
   comment    : colors.purple,
   annotation : colors.darkPurple,
-  annotation2 : C(colors.darkPurple).lighten(0.2).hexString(),
+  annotation2 : C(colors.darkPurple).lighten(0.3).hexString(),
 
   function        : colors.orange,
 
