@@ -179,7 +179,10 @@ export default {
       scope: `
         meta.definition.variable,
         variable.parameter,
-        meta.import variable.other.readwrite.alias
+        meta.import variable.other.readwrite.alias,
+        meta.class.js entity.name.type.class.js,
+        meta.class.js meta.method.declaration.js meta.definition.method.js,
+        meta.class.js meta.field.declaration.js meta.definition.property.js
       `,
       settings: {
         fontStyle: 'bold',
