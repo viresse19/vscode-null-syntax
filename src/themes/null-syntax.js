@@ -152,6 +152,7 @@ export default {
         variable.language.this,
         variable.language.super,
         support.class.builtin,
+        support.class.console.js,
         support.variable.object.process,
         support.variable.object.node,
         support.variable.property.js,
