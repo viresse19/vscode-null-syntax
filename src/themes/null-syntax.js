@@ -254,7 +254,8 @@ export default {
     {
       scope: `
         meta.type.annotation variable.parameter,
-        meta.type.declaration variable.object.property
+        meta.type.declaration variable.object.property,
+        meta.type.annotation meta.object.type variable.object.property
       `,
       settings: { foreground: elements.annotation2 }
     },
