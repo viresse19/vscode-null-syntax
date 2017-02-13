@@ -267,7 +267,8 @@
         <string>
         meta.type.annotation,
         meta.type.declaration,
-        meta.type.annotation variable.object.property
+        meta.type.annotation variable.object.property,
+        meta.return.type
       </string>
         <key>settings</key>
         <dict>
@@ -280,7 +281,8 @@
         <string>
         meta.type.annotation variable.parameter,
         meta.type.declaration variable.object.property,
-        meta.type.annotation meta.object.type variable.object.property
+        meta.type.annotation meta.object.type variable.object.property,
+        meta.type.annotation string
       </string>
         <key>settings</key>
         <dict>
