@@ -34,7 +34,8 @@ export default {
         entity.name.tag.yaml,
         entity.name.section.markdown,
         meta.property-name.css,
-        entity.other.attribute-name
+        entity.other.attribute-name,
+        variable.other.normal.shell
       `,
       settings: {
         foreground: elements.propWrite,
@@ -122,6 +123,7 @@ export default {
       scope: `
         keyword.reserved,
         keyword.control,
+        keyword.other.debugger,
         constant.language.import-export-all,
         css.keyword.other.unit
       `,

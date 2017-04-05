@@ -48,7 +48,8 @@
         entity.name.tag.yaml,
         entity.name.section.markdown,
         meta.property-name.css,
-        entity.other.attribute-name
+        entity.other.attribute-name,
+        variable.other.normal.shell
       </string>
         <key>settings</key>
         <dict>
@@ -144,6 +145,7 @@
         <string>
         keyword.reserved,
         keyword.control,
+        keyword.other.debugger,
         constant.language.import-export-all,
         css.keyword.other.unit
       </string>
