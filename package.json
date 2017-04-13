@@ -1,7 +1,7 @@
 {
   "name": "null-syntax",
   "displayName": "Null Syntax",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A theme which fades punctuation & highlights control flow",
   "publisher": "nfour",
   "scripts": {
