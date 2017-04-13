@@ -89,6 +89,17 @@
       <dict>
         <key>scope</key>
         <string>
+        constant.numeric
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a0dab0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>
         meta.template.expression
       </string>
         <key>settings</key>

@@ -68,6 +68,18 @@ export default {
       settings: { foreground: elements.string }
     },
 
+    /**
+     * Numbers
+     */
+    {
+      scope: `
+        constant.numeric
+      `,
+      settings: {
+        foreground: colors.teal
+      }
+    },
+
     // Fix templates
     {
       scope: `
@@ -313,6 +325,5 @@ export default {
       `,
       settings: { foreground: elements.terminator }
     },
-
   ]
 }
