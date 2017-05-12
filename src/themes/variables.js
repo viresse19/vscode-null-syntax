@@ -23,7 +23,7 @@ export const colors = {
   cyan       : '#a1dbe3',
   blue       : '#96b3f2',
   purple     : '#aca6c9',
-  darkPurple : '#716e89',
+  darkPurple : '#747190',
 
   shade  : '#9f9f9f',
   shade1 : '#949494',
@@ -47,7 +47,8 @@ export const elements = {
   quote      : colors.shade1,
   comment    : colors.purple,
   annotation : colors.darkPurple,
-  annotation2 : C(colors.darkPurple).lighten(0.3).hexString(),
+  annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hexString(),
+  annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hexString(),
 
   function        : colors.orange,
 

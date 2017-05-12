@@ -260,6 +260,8 @@ export default {
     {
       scope: `
         meta.type.annotation,
+        meta.interface.ts,
+        cast.expr.ts entity.name.type.ts,
         meta.type.declaration,
         meta.type.annotation variable.object.property,
         meta.return.type
@@ -282,6 +284,15 @@ export default {
       `,
       settings: { foreground: elements.punctuation }
     },
+    /**
+     * Interface props
+     */
+    {
+      scope: `
+        meta.interface.ts meta.definition.property.ts
+      `,
+      settings: { fontStyle: 'bold' }
+    },
 
     /**
      * Annotation primitives
@@ -291,7 +302,7 @@ export default {
         support.type.primitive,
         support.type.builtin
       `,
-      settings: { foreground: elements.annotation2, fontStyle: "italic" }
+      settings: { foreground: elements.annotation3, fontStyle: "italic" }
     },
 
     /**
