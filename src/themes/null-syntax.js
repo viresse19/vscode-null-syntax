@@ -259,6 +259,7 @@ export default {
      */
     {
       scope: `
+        meta.indexer.declaration.ts variable.parameter.ts,
         meta.type.annotation,
         meta.interface.ts,
         cast.expr.ts entity.name.type.ts,
