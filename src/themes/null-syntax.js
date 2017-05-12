@@ -260,11 +260,12 @@ export default {
     {
       scope: `
         meta.indexer.declaration.ts variable.parameter.ts,
-        meta.type.annotation,
         meta.interface.ts,
         cast.expr.ts entity.name.type.ts,
         meta.type.declaration,
+        meta.type.annotation,
         meta.type.annotation variable.object.property,
+        meta.class meta.type.annotation meta.object.type meta.definition.property variable.object.property,
         meta.return.type
       `,
       settings: { foreground: elements.annotation }
@@ -290,7 +291,7 @@ export default {
      */
     {
       scope: `
-        meta.interface.ts meta.definition.property.ts,
+          meta.interface.ts meta.definition.property.ts,
         meta.object.type.ts meta.definition.property.ts,
         meta.type.declaration.ts entity.name.type.alias.ts,
         meta.interface.ts entity.name.type.interface.ts
