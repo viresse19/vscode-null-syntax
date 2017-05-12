@@ -289,7 +289,10 @@ export default {
      */
     {
       scope: `
-        meta.interface.ts meta.definition.property.ts
+        meta.interface.ts meta.definition.property.ts,
+        meta.object.type.ts meta.definition.property.ts,
+        meta.type.declaration.ts entity.name.type.alias.ts,
+        meta.interface.ts entity.name.type.interface.ts
       `,
       settings: { fontStyle: 'bold' }
     },
