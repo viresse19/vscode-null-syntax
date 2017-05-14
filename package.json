@@ -6,6 +6,7 @@
   "publisher": "nfour",
   "scripts": {
     "build": "node -r babel-register ./src/build",
+    "release": "yarn build && yarn vsce publish",
     "start": "nodemon -w ./src -x 'node -r babel-register' ./src/build"
   },
   "engines": {
