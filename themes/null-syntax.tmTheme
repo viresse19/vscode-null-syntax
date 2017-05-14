@@ -125,7 +125,8 @@
         support.function,
         entity.name.function,
         meta.selector.css,
-        entity.name.tag
+        entity.name.tag,
+        meta.decorator
       </string>
         <key>settings</key>
         <dict>
@@ -143,7 +144,9 @@
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
         punctuation.definition.sequence.item,
-        beginning.punctuation.definition.list.markdown
+        beginning.punctuation.definition.list.markdown,
+        punctuation.decorator
+
       </string>
         <key>settings</key>
         <dict>

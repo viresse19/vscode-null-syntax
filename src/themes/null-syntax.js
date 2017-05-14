@@ -106,7 +106,8 @@ export default {
         support.function,
         entity.name.function,
         meta.selector.css,
-        entity.name.tag
+        entity.name.tag,
+        meta.decorator
       `,
       settings: { foreground: elements.function }
     },
@@ -123,7 +124,9 @@ export default {
         punctuation.definition.scalar.folded,
         yaml.chomping-indicator,
         punctuation.definition.sequence.item,
-        beginning.punctuation.definition.list.markdown
+        beginning.punctuation.definition.list.markdown,
+        punctuation.decorator
+
       `,
       settings: { foreground: elements.operator }
     },
