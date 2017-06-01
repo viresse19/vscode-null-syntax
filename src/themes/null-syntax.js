@@ -265,6 +265,7 @@ export default {
         meta.indexer.declaration.ts variable.parameter.ts,
         meta.interface.ts,
         cast.expr.ts entity.name.type.ts,
+        meta.type.parameters.ts entity.name.type.ts,
         meta.type.declaration,
         meta.type.annotation,
         meta.type.annotation variable.object.property,
