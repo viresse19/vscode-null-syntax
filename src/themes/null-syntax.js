@@ -266,6 +266,10 @@ export default {
         meta.interface.ts,
         cast.expr.ts entity.name.type.ts,
         meta.type.parameters.ts entity.name.type.ts,
+        meta.indexer.declaration.tsx variable.parameter.tsx,
+        meta.interface.tsx,
+        cast.expr.tsx entity.name.type.tsx,
+        meta.type.parameters.tsx entity.name.type.tsx,
         meta.type.declaration,
         meta.type.annotation,
         meta.type.annotation variable.object.property,
@@ -295,10 +299,14 @@ export default {
      */
     {
       scope: `
-          meta.interface.ts meta.definition.property.ts,
+        meta.interface.ts meta.definition.property.ts,
         meta.object.type.ts meta.definition.property.ts,
         meta.type.declaration.ts entity.name.type.alias.ts,
         meta.interface.ts entity.name.type.interface.ts
+        meta.interface.tsx meta.definition.property.tsx,
+        meta.object.type.tsx meta.definition.property.tsx,
+        meta.type.declaration.tsx entity.name.type.alias.tsx,
+        meta.interface.tsx entity.name.type.interface.tsx
       `,
       settings: { fontStyle: 'bold' }
     },
