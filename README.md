@@ -2,7 +2,7 @@
 
 A theme which focuses on fading punctuation and highlighting control flow.
 
-![Null](http://i.imgur.com/eO5YzwJ.png)
+![Null](https://i.imgur.com/eO5YzwJ.png)
 
 ## CUSTOMIZE
 
