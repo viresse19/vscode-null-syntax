@@ -125,8 +125,7 @@
         support.function,
         entity.name.function,
         meta.selector.css,
-        entity.name.tag,
-        meta.decorator
+        entity.name.tag
       </string>
         <key>settings</key>
         <dict>
@@ -146,7 +145,6 @@
         punctuation.definition.sequence.item,
         beginning.punctuation.definition.list.markdown,
         punctuation.decorator
-
       </string>
         <key>settings</key>
         <dict>
