@@ -272,7 +272,8 @@ export default {
         meta.type.annotation,
         meta.type.annotation variable.object.property,
         meta.class meta.type.annotation meta.object.type meta.definition.property variable.object.property,
-        meta.return.type
+        meta.return.type,
+        entity.name.type.ts
       `,
       settings: { foreground: elements.annotation }
     },
