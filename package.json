@@ -5,22 +5,21 @@
   "description": "A theme which fades punctuation & highlights control flow",
   "publisher": "nfour",
   "scripts": {
-    "build": "node -r babel-register ./src/build",
+    "build": "ts-node ./src/build",
     "release": "yarn build && yarn vsce publish",
-    "start": "nodemon -w ./src -x 'node -r babel-register' ./src/build"
+    "start": "nodemon -e ts -w src -x ts-node ./src/build"
   },
   "engines": {
     "vscode": "^0.10.1"
   },
   "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-preset-es2015-node6": "^0.4.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "babel-register": "^6.18.0",
-    "babel-watch": "^2.0.3",
     "color": "^0.11.4",
     "nodemon": "^1.11.0",
     "plist": "^2.0.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-temando": "^1.5.11",
+    "typescript": "^2.6.1",
     "vsce": "^1.26.0",
     "yargs": "^6.3.0"
   },

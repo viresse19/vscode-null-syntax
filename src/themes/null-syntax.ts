@@ -1,4 +1,4 @@
-import C from 'color'
+import * as C from 'color'
 import { colors, elements } from './variables'
 
 export default {

@@ -1,14 +1,14 @@
-import C from 'color'
+import * as C from 'color';
 
 export const colors = {
   fore  : '#d2d2d2',
   fore2 : '#ddd',
 
   foregrounds: [
-    "#e0e0e0",
-    "#dadada",
-    "#cacaca",
-    "#bababa",
+    '#e0e0e0',
+    '#dadada',
+    '#cacaca',
+    '#bababa',
   ],
 
   back  : '#201f1f',
@@ -23,13 +23,13 @@ export const colors = {
   cyan       : '#a1dbe3',
   blue       : '#96b3f2',
   purple     : '#aca6c9',
-  darkPurple : '#747190',
+  darkPurple : '#8481a0',
 
   shade  : '#9f9f9f',
   shade1 : '#949494',
   shade2 : '#727272',
   shade3 : '#4a4a4a',
-}
+};
 
 export const elements = {
   punctuation     : colors.shade1,
@@ -46,7 +46,7 @@ export const elements = {
   regexp     : colors.blue,
   quote      : colors.shade1,
   comment    : colors.purple,
-  annotation : colors.darkPurple,
+  annotation : C(colors.darkPurple).saturate(0.6).hexString(),
   annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hexString(),
   annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hexString(),
 
@@ -72,4 +72,4 @@ export const elements = {
   guide           : colors.fore + '35',
   activeGuide     : colors.fore + '50',
   invisibles      : colors.fore + '05',
-}
+};

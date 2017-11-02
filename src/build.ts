@@ -1,6 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import plist from 'plist'
+import * as fs from 'fs'
+import * as path from 'path'
+import * as plist from 'plist'
 
 const themeDir = path.join(__dirname, '../themes')
 const themes   = ['null-syntax']

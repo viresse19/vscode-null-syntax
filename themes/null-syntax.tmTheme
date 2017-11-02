@@ -296,7 +296,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#747190</string>
+          <string>#7E79A9</string>
         </dict>
       </dict>
       <dict>
@@ -310,7 +310,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8D8B9C</string>
+          <string>#A2A0B0</string>
         </dict>
       </dict>
       <dict>
@@ -352,7 +352,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#7C928D</string>
+          <string>#819893</string>
           <key>fontStyle</key>
           <string>italic</string>
         </dict>
