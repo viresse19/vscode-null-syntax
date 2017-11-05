@@ -352,5 +352,12 @@ export default {
       `,
       settings: { foreground: elements.terminator },
     },
+
+    {
+      scope: `
+        string.language.gherkin.scenario.title
+      `,
+      settings: { foreground: elements.constant },
+    },
   ],
 };
