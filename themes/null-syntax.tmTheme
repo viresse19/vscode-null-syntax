@@ -159,7 +159,8 @@
         keyword.control,
         keyword.other.debugger,
         constant.language.import-export-all,
-        css.keyword.other.unit
+        css.keyword.other.unit,
+        keyword.language.gherkin
       </string>
         <key>settings</key>
         <dict>

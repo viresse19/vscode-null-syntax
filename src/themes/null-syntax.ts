@@ -126,7 +126,7 @@ export default {
         beginning.punctuation.definition.list.markdown,
         punctuation.decorator
       `,
-      settings: { foreground: elements.operator }
+      settings: { foreground: elements.operator },
     },
 
     /**
@@ -138,9 +138,10 @@ export default {
         keyword.control,
         keyword.other.debugger,
         constant.language.import-export-all,
-        css.keyword.other.unit
+        css.keyword.other.unit,
+        keyword.language.gherkin
       `,
-      settings: { foreground: elements.keyword }
+      settings: { foreground: elements.keyword },
     },
 
     /**
@@ -150,13 +151,13 @@ export default {
       scope: `
         storage
       `,
-      settings: { foreground: elements.storage }
+      settings: { foreground: elements.storage },
     },
     {
       scope: `
         meta.var storage.type.js
       `,
-      settings: { foreground: elements.storage2 }
+      settings: { foreground: elements.storage2 },
     },
 
     /**
@@ -174,7 +175,7 @@ export default {
         constant.language,
         markup.heading.section
       `,
-      settings: { foreground: elements.constant }
+      settings: { foreground: elements.constant },
     },
 
     /**
@@ -185,7 +186,7 @@ export default {
         variable.language,
         constant.language
       `,
-      settings: { fontStyle: 'italic' }
+      settings: { fontStyle: 'italic' },
     },
 
     /**
@@ -203,7 +204,7 @@ export default {
       settings: {
         fontStyle: 'bold',
         foreground: colors.foregrounds[0],
-      }
+      },
     },
 
     // /**
@@ -229,7 +230,7 @@ export default {
         meta.object-literal.key meta.brace.square,
         punctuation.definition.template-expression
       `,
-      settings: { foreground: elements.brace }
+      settings: { foreground: elements.brace },
     },
 
     /**
@@ -241,7 +242,7 @@ export default {
         punctuation.definition.parameters.begin,
         punctuation.definition.parameters.end
       `,
-      settings: { foreground: elements.brace }
+      settings: { foreground: elements.brace },
     },
 
     /**
@@ -252,7 +253,7 @@ export default {
         punctuation.definition.parameters.begin,
         punctuation.definition.parameters.end
       `,
-      settings: { fontStyle: 'bold' }
+      settings: { fontStyle: 'bold' },
     },
 
     /**
@@ -274,7 +275,7 @@ export default {
         meta.class meta.type.annotation meta.object.type meta.definition.property variable.object.property,
         meta.return.type
       `,
-      settings: { foreground: elements.annotation }
+      settings: { foreground: elements.annotation },
     },
     {
       scope: `
@@ -283,14 +284,14 @@ export default {
         meta.type.annotation meta.object.type variable.object.property,
         meta.type.annotation string
       `,
-      settings: { foreground: elements.annotation2 }
+      settings: { foreground: elements.annotation2 },
     },
     {
       scope: `
         keyword.operator.type,
         keyword.operator.optional
       `,
-      settings: { foreground: elements.punctuation }
+      settings: { foreground: elements.punctuation },
     },
     /**
      * Interface props
@@ -306,7 +307,7 @@ export default {
         meta.type.declaration.tsx entity.name.type.alias.tsx,
         meta.interface.tsx entity.name.type.interface.tsx
       `,
-      settings: { fontStyle: 'bold' }
+      settings: { fontStyle: 'bold' },
     },
 
     /**
@@ -317,7 +318,7 @@ export default {
         support.type.primitive,
         support.type.builtin
       `,
-      settings: { foreground: elements.annotation3, fontStyle: "italic" }
+      settings: { foreground: elements.annotation3, fontStyle: 'italic' },
     },
 
     /**
@@ -327,7 +328,7 @@ export default {
       scope: `
         comment
       `,
-      settings: { foreground: elements.comment }
+      settings: { foreground: elements.comment },
     },
 
     /**
@@ -339,7 +340,7 @@ export default {
         markup.heading,
         keyword.control.from
       `,
-      settings: { foreground: elements.punctuation }
+      settings: { foreground: elements.punctuation },
     },
 
     /**
@@ -349,7 +350,7 @@ export default {
       scope: `
         punctuation.terminator
       `,
-      settings: { foreground: elements.terminator }
+      settings: { foreground: elements.terminator },
     },
-  ]
-}
+  ],
+};
