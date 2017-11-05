@@ -393,6 +393,17 @@
           <string>#4a4a4a</string>
         </dict>
       </dict>
+      <dict>
+        <key>scope</key>
+        <string>
+        string.language.gherkin.scenario.title
+      </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a0dab0</string>
+        </dict>
+      </dict>
     </array>
   </dict>
 </plist>
