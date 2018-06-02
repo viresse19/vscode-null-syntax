@@ -1,42 +1,47 @@
 {
-  "name": "null-syntax",
-  "displayName": "Null Syntax",
-  "version": "0.10.0",
-  "description": "A theme which fades punctuation & highlights control flow",
-  "publisher": "nfour",
-  "scripts": {
-    "build": "ts-node ./src/build",
-    "release": "yarn build && yarn vsce publish",
-    "start": "nodemon -e ts -w src -x ts-node ./src/build"
-  },
-  "engines": {
-    "vscode": "^0.10.1"
-  },
-  "devDependencies": {
-    "color": "^0.11.4",
-    "nodemon": "^1.11.0",
-    "plist": "^2.0.1",
-    "ts-node": "^3.3.0",
-    "tslint": "^5.8.0",
-    "tslint-config-temando": "^1.5.11",
-    "typescript": "^2.6.1",
-    "vsce": "^1.26.0",
-    "yargs": "^6.3.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Null Syntax",
-        "uiTheme": "vs-dark",
-        "path": "./themes/null-syntax.tmTheme"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nfour/vscode-null-syntax"
-  }
+	"name": "null-syntax",
+	"displayName": "Null Syntax",
+	"version": "0.10.0",
+	"description": "A theme which fades punctuation & highlights control flow",
+	"publisher": "nfour",
+	"scripts": {
+		"build": "ts-node ./src/build",
+		"release": "yarn build && yarn vsce publish",
+		"start": "nodemon -e ts -w src -x ts-node ./src/build"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"devDependencies": {
+		"color": "^0.11.4",
+		"nodemon": "^1.11.0",
+		"plist": "^2.0.1",
+		"ts-node": "^3.3.0",
+		"tslint": "^5.8.0",
+		"tslint-config-temando": "^1.5.11",
+		"typescript": "^2.6.1",
+		"vsce": "^1.26.0",
+		"yargs": "^6.3.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Null Syntax",
+				"uiTheme": "vs-dark",
+				"path": "./themes/null-syntax.tmTheme"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nfour/vscode-null-syntax"
+	},
+	"__metadata": {
+		"id": "bfd10cd9-a0d2-476f-997a-215e09929733",
+		"publisherDisplayName": "nfour",
+		"publisherId": "969cf5b4-fef2-499a-8a3c-d6592dce22b3"
+	}
 }
