@@ -1,6 +1,8 @@
 # VSCODE NULL SYNTAX
 
-A theme which focuses on fading punctuation and highlighting control flow.
+A theme which focuses on:
+- Fading punctuation and annotations
+- Highlighting control flow
 
 ![Null](https://i.imgur.com/eO5YzwJ.png)
 
