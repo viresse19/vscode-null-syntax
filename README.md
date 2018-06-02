@@ -1,13 +1,19 @@
 # VsCode Null Syntax Theme
 
 - [VsCode Null Syntax Theme](#vscode-null-syntax-theme)
+  - [Type Annotations](#type-annotations)
+  - [Destructuring](#destructuring)
   - [Customizing](#customizing)
 
 A theme which focuses on:
 - Fading punctuation and annotations
 - Highlighting control flow
 
-![Null](https://i.imgur.com/eO5YzwJ.png)
+## Type Annotations
+![TS](./docs/ts.jpg)
+
+## Destructuring 
+![Null](./docs/destructuring.png)
 
 ## Customizing
 
