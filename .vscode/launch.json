@@ -11,7 +11,7 @@
         "${workspaceRoot}/test/ts.tsx",
          "--extensionDevelopmentPath=${workspaceRoot}"
       ],
-      "postDebugTask": "npm: build",
+      "postDebugTask": "npm: build", // Because preLaunch isnt run on restart
       "preLaunchTask": "npm: build"
     }
   ]
