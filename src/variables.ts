@@ -10,17 +10,17 @@ export const colors = {
 
   back: '#201f1f',
 
-  red: '#e79d8d',
-  orange: '#fdbd7d',
-  yellow: '#e2d294',
+  red: '#CF1C58',
+  orange: '#cd772c',
+  yellow: '#BBD900',
   gold: '#bfa383',
-  grass: '#abc78a',
-  lime: '#6fb050',
-  teal: '#a0dab0',
-  cyan: '#a1dbe3',
-  blue: '#96b3f2',
-  purple: '#aca6c9',
-  darkPurple: '#8481a0',
+  grass: '#BBD900',
+  lime: '#009D4D',
+  teal: '#3BC6AE',
+  cyan: '#009BA9',
+  blue: '#311F76',
+  purple: '#954EB8',
+  darkPurple: '#31273F',
 
   shade: '#9f9f9f',
   shade1: '#949494',
@@ -31,7 +31,7 @@ export const colors = {
 export const elements = {
   importantText: colors.foregrounds[0],
   text: colors.foregrounds[1],
-  background: colors.back,
+  background: C(colors.back).mix(C(colors.red).darken(0.5)).hex(),
 
   // Not sure where these get used
   bracketsForeground: colors.red,
@@ -51,14 +51,14 @@ export const elements = {
   regexp: colors.blue,
   quote: colors.shade1,
   comment: colors.purple,
-  annotation: C(colors.darkPurple).saturate(0.6).hexString(),
-  annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hexString(),
-  annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hexString(),
+  annotation: C(colors.darkPurple).saturate(0.6).hex(),
+  annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hex(),
+  annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hex(),
 
   function: colors.orange,
 
   variable: colors.yellow,
-  support: C(colors.yellow, C(colors.foregrounds[1])).hexString(),
+  support: C(colors.yellow).mix(C(colors.foregrounds[1])).hex(),
   supportType: colors.red,
   supportFunction: colors.lime,
   storage: colors.shade,
