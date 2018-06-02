@@ -1,4 +1,5 @@
-// @flow
+// tslint:disable
+
 /**
  *
  * IMPORT & EXPORTS
@@ -6,10 +7,10 @@
  */
 
 import { A as b, c } from './asdasd';
-import type A from './a'
-import { type C, b } from 'b'
+import A from './a'
+import { C, b } from 'b'
 
-export default async function test() {}
+export const foo = async function test() { }
 export default {
   "a": 1,
   b: {
@@ -20,7 +21,7 @@ export default {
     fn: function () {
 
     },
-    fn: () => {},
+    fn: () => { },
   }
 }
 
@@ -28,13 +29,20 @@ export const a = { c: 1 }
 
 
 /**
- * FLOW
+ * TS
  */
 
+export interface IFoo<A = any> {
+  a: {
+    x: string;
+    a: A;
+    b: IFoo<1>;
+  }
+}
 
 type La = string | { b?: La }
-const a: { c?: string } | boolean = a;
-function<T>(c: Array<T>): T {}
+const xx: { c?: string } | boolean = true;
+function aaa<T>(c: Array<T>): T { return; }
 
 /**
  * DECLARATION STRUCTURES
@@ -49,15 +57,14 @@ const c = [
       return a[1]
     }
   }
-]
-const d = {a:1}
+];
+const d = { a: 1 }
 
 /**
  *
  * CONDITIONALS
  *
  */
-
 
 switch (true) {
   case: {
@@ -66,12 +73,11 @@ switch (true) {
 }
 
 if (a === 2) {
-  1
+  1;
 } else
-if (5) throw 1;
+  if (5) { throw 1; }
 
-try { a } catch (err) {}
-
+try { a; } catch (err) { }
 
 /**
  *
@@ -80,22 +86,21 @@ try { a } catch (err) {}
  */
 
 const a = a;
-const b = aaa.bbb.ccc.d().aa.bb.cc
-const b = aaa['s'].bbb.ccc.d().aa.bb.cc
+const b = aaa.bbb.ccc.d().aa.bb.cc;
+const b = aaa.s.bbb.ccc.d().aa.bb.cc;
 
-
-class Test extends Test {}
-class test extends test {}
-function a() {}
-const a = () => {}
-const A = (a, b) => 1
-const a = [ ...a ];
+class Test extends Test { }
+class test extends test { }
+function a() { }
+const a = () => { };
+const A = (a, b) => 1;
+const a = [...a];
 let a = arr[0][1];
-new Test()
-Test.a
+new Test();
+Test.a;
 const arr = [
   1, 2, (a) => 1,
-  4, 5, "6",
+  4, 5, '6',
 ];
 const a = 1;
 
@@ -104,14 +109,14 @@ class InAClass {
   static b;
   c = 1;
 
-  fn() {}
-  fn = () => 1
-  fn = function() {}
+  fn() { }
+  fn = () => 1;
+  fn = function () { };
 
   constructor() {
     a.b = 1;
     this.a = 1;
-    const a = () => { return 1.3331231; }
+    const a = () => 1.3331231;
   }
 }
 
@@ -121,21 +126,20 @@ class InAClass {
  *
  */
 
-String
-Object.keys()
-console.info
-process
-__dirname
-true
-null
-Infinity
+String;
+Object.keys();
+console.info;
+process;
+__dirname;
+true;
+null;
+Infinity;
 class A {
   constructor() {
-    super()
+    super();
     this.a = 1;
   }
 }
-
 
 /**
  *
@@ -143,16 +147,15 @@ class A {
  *
  */
 
-const str = "aaa${s}"
-const str = 'asdasd'
-const str = `aaa${aaa}aaa`
+const str = 'aaa${s}';
+const str = 'asdasd';
+const str = `aaa${aaa}aaa`;
 
 const obj = {
-  [`aaa${prop[1]}`]: param().a
-}
+  [`aaa${prop[1]}`]: param().a,
+};
 
-const a = arr[`aaa ${a.c.d("w", 1.33)} aaa`]
-
+const a = arr[`aaa ${a.c.d('w', 1.33)} aaa`];
 
 /**
  *
@@ -160,24 +163,24 @@ const a = arr[`aaa ${a.c.d("w", 1.33)} aaa`]
  *
  */
 
-const three = 1
-const assignment = { one: { two: three } }
+const three = 1;
+const assignment = { one: { two: three } };
 const { one: { two: three } } = assignment;
 const [a, { one: { two: three } }] = [1, assignment];
 
-const fn = ([a, {c: d}], { one: { two: three = 1 } } = { one: { two: {} } }) => {
+const fn = ([a, { c: d }], { one: { two: three = 1 } } = { one: { two: {} } }) => {
   return three;
-}
+};
 
 const fn = (
   {
     one: {
-      two: three = 1
-    }
-  } = { one: { two: {} } }
+      two: three = 1,
+    },
+  } = { one: { two: {} } },
 ) => {
   return three;
-}
+};
 
 /**
  *
@@ -186,76 +189,74 @@ const fn = (
  */
 
 const fn = () => {
-  fn()
-  method.fn()
-  fn(fn(method.fn(1, fn())))
+  fn();
+  method.fn();
+  fn(fn(method.fn(1, fn())));
   fn(
     fn(
-      method.fn()
-    )
-  )
-}
+      method.fn(),
+    ),
+  );
+};
 
-console.log()
-console.log
-
+console.log();
+console.log;
 
 class Test2 extends s {
   static prop = 1;
   prop = [];
 
-  fn(param, ...params) { param() }
+  fn(param, ...params) { param(); }
 
-  async fn(param, ...params) { param(aaaa) }
+  async fn(param, ...params) { param(aaaa); }
 
   fn = async ({ a = 1.3331231, b: { c } } = { a: 0x012331 }) => {
     const obj = fn({
-      [`aaa${prop[`a${"test"}a`]}`]: param().a
-    })
+      [`aaa${prop[`a${'test'}a`]}`]: param().a,
+    });
 
     const arr = [
       1, 2, 3,
       4, 5, 6,
-      `${wew[1]}`
+      `${wew[1]}`,
     ];
 
-    let test = arr[0][1];
+    const test = arr[0][1];
 
-    process.env.NODE_ENV
-    process.exit
-    __dirname
+    process.env.NODE_ENV;
+    process.exit;
+    __dirname;
 
-    this.fn()
+    this.fn();
 
     const [{ aaaa: { baa } }] = new Promise();
 
-    const fn2 = fn(({ destruc: { stuff }}) => {
+    const fn2 = fn(({ destruc: { stuff } }) => {
       const obj2 = { prop: { a: param().prototype.a } };
-      console.log()
-    })
+      console.log();
+    });
   }
-
 
 }
 const { a: { baa } } = new Promise();
-const { a: [ c ] } = new Promise();
+const { a: [c] } = new Promise();
 const [c] = new Promise();
 
-typeOf.Function()
-typeOf.function = 1 % 22
-Object.keys()
+typeOf.Function();
+typeOf.function = 1 % 22;
+Object.keys();
 
 const newObj = {
   a: b.c.d, // wew
   onChange: (value) => this.onChangeControl(control.id, value),
-}
+};
 
-console.log()
-console.log
-new Promise()
-fn((param, { a: { param2 }}) => {
-  console.log()
-})
+console.log();
+console.log;
+new Promise();
+fn((param, { a: { param2 } }) => {
+  console.log();
+});
 
 function myFn() {
 

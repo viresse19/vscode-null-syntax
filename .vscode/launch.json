@@ -6,7 +6,11 @@
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
-      "args": ["${workspaceRoot}/test",  "--extensionDevelopmentPath=${workspaceRoot}" ],
+      "args": [
+        "${workspaceRoot}/test",
+        "${workspaceRoot}/test/ts.tsx",
+         "--extensionDevelopmentPath=${workspaceRoot}"
+      ],
       "preLaunchTask": "npm: build"
     }
   ]
