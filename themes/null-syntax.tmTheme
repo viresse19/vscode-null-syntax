@@ -20,7 +20,7 @@
           <key>foreground</key>
           <string>#dadada</string>
           <key>invisibles</key>
-          <string>#d2d2d205</string>
+          <string>#dadada05</string>
           <key>selection</key>
           <string>#6fb05030</string>
           <key>selectionBorder</key>
@@ -28,9 +28,9 @@
           <key>lineHighlight</key>
           <string>#1A1919</string>
           <key>guide</key>
-          <string>#d2d2d235</string>
+          <string>#dadada35</string>
           <key>activeGuide</key>
-          <string>#d2d2d250</string>
+          <string>#dadada50</string>
           <key>findHighlight</key>
           <string>#e2d29440</string>
           <key>bracketsForeground</key>

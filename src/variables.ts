@@ -58,7 +58,7 @@ export const elements = {
   function: colors.orange,
 
   variable: colors.yellow,
-  support: C(colors.yellow, C(colors.fore)).hexString(),
+  support: C(colors.yellow, C(colors.foregrounds[1])).hexString(),
   supportType: colors.red,
   supportFunction: colors.lime,
   storage: colors.shade,
