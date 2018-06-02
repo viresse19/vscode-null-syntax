@@ -11,6 +11,9 @@ A theme which focuses on:
 
 ## Customizing
 
-- `yarn start` to build and watch
+You can customize the `variables.ts` file to your own preference!
+
+Steps:
+- Hit `F5`, this will open up a debugger instance in the `test` folder
 - Modify `src/variables.ts` `colors`
-- Reload a vscode window to see changes, or run vscode in dev mode
+- Hit the reload button on the debugger to see your changes
