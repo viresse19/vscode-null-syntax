@@ -5,9 +5,9 @@
 	"description": "A theme which fades punctuation & highlights control flow",
 	"publisher": "nfour",
 	"scripts": {
-		"build": "ts-node ./src/build",
+		"build": "ts-node scripts/build",
 		"release": "yarn build && yarn vsce publish",
-		"start": "nodemon -e ts -w src -x ts-node ./src/build"
+		"start": "nodemon -e ts -w src -x ts-node scripts/build"
 	},
 	"engines": {
 		"vscode": "^0.10.1"

@@ -1,9 +1,6 @@
 import * as C from 'color';
 
 export const colors = {
-  fore: '#d2d2d2',
-  fore2: '#ddd',
-
   foregrounds: [
     '#e0e0e0',
     '#dadada',
@@ -77,7 +74,7 @@ export const elements = {
   selection: colors.lime + '30',
   selectionBorder: colors.lime + '70',
   findHighlight: colors.yellow + '40',
-  guide: colors.fore + '35',
-  activeGuide: colors.fore + '50',
-  invisibles: colors.fore + '05',
+  guide: colors.foregrounds[1] + '35',
+  activeGuide: colors.foregrounds[1] + '50',
+  invisibles: colors.foregrounds[1] + '05',
 };
