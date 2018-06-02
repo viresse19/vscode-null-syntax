@@ -1,26 +1,26 @@
-import * as C from 'color'
-import { colors, elements } from './variables'
+import * as C from 'color';
+import { elements } from './variables';
 
 export default {
-  uuid           : "32bk64fa-d60n-4858-a5fc-5164xc49a2b8",
-  name           : "Null-Syntax",
-  semanticClass  : "Null-Syntax",
+  uuid           : '32bk64fa-d60n-4858-a5fc-5164xc49a2b8',
+  name           : 'Null-Syntax',
+  semanticClass  : 'Null-Syntax',
   settings: [
     {
       settings: {
-        background                : colors.back,
+        background                : elements.background,
         caret                     : elements.caret,
-        foreground                : colors.foregrounds[1],
+        foreground                : elements.text,
         invisibles                : elements.invisibles,
         selection                 : elements.selection,
         selectionBorder           : elements.selectionBorder,
-        lineHighlight             : C(colors.back).darken(0.2).hexString(),
+        lineHighlight             : C(elements.background).darken(0.2).hexString(),
         guide                     : elements.guide,
         activeGuide               : elements.activeGuide,
         findHighlight             : elements.findHighlight,
-        bracketsForeground        : colors.red,
-        bracketContentsForeground : colors.blue,
-      }
+        bracketsForeground        : elements.bracketsForeground,
+        bracketContentsForeground : elements.bracketContentsForeground,
+      },
     },
 
     /**
@@ -39,8 +39,8 @@ export default {
       `,
       settings: {
         foreground: elements.propWrite,
-        fontStyle: 'bold'
-      }
+        fontStyle: 'bold',
+      },
     },
 
     /**
@@ -53,7 +53,7 @@ export default {
         meta.array-binding-pattern-variable variable.object.property,
         meta.parameters variable.object.property
       `,
-      settings: { foreground: elements.propRead }
+      settings: { foreground: elements.propRead },
     },
 
     /**
@@ -65,7 +65,7 @@ export default {
         constant.numeric,
         markup.inline.raw.markdown
       `,
-      settings: { foreground: elements.string }
+      settings: { foreground: elements.string },
     },
 
     /**
@@ -76,8 +76,8 @@ export default {
         constant.numeric
       `,
       settings: {
-        foreground: colors.teal
-      }
+        foreground: elements.constant,
+      },
     },
 
     // Fix templates
@@ -85,7 +85,7 @@ export default {
       scope: `
         meta.template.expression
       `,
-      settings: { foreground: colors.foregrounds[1] }
+      settings: { foreground: elements.text },
     },
 
     /**
@@ -95,7 +95,7 @@ export default {
       scope: `
         regex
       `,
-      settings: { foreground: elements.regexp }
+      settings: { foreground: elements.regexp },
     },
 
     /**
@@ -108,7 +108,7 @@ export default {
         meta.selector.css,
         entity.name.tag
       `,
-      settings: { foreground: elements.function }
+      settings: { foreground: elements.function },
     },
 
     /**
@@ -203,7 +203,7 @@ export default {
       `,
       settings: {
         fontStyle: 'bold',
-        foreground: colors.foregrounds[0],
+        foreground: elements.importantText,
       },
     },
 
