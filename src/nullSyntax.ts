@@ -6,16 +6,19 @@ const theme: ITheme = {
   type: 'dark',
   colors: {
     'foreground': elements.text,
+    'selection.background': elements.selection,
+
     'editor.foreground': elements.text,
     'editor.background': elements.background,
     'editor.selectionBackground': elements.selection,
     'editor.selectionHighlightBorder': elements.selectionBorder,
     'editor.findMatchHighlightBackground': elements.findHighlight,
     'editor.lineHighlightBackground': elements.lineHighlight,
+
     'editorBracketMatch.border': elements.bracketContentsForeground,
     'editorCursor.foreground': elements.caret,
     'editorWhitespace.foreground': elements.invisibles,
-    'selection.background': elements.selection,
+
   },
   tokenColors: [
     /**
