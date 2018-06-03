@@ -28,10 +28,12 @@ export const colors = {
   shade3: '#4a4a4a',
 };
 
+const dry: any = {};
+
 export const elements = {
   importantText: colors.foregrounds[0],
   text: colors.foregrounds[1],
-  background: colors.back,
+  background: dry.background = colors.back,
 
   // Not sure where these get used
   bracketsForeground: colors.red,
@@ -73,7 +75,7 @@ export const elements = {
   caret: '#ffffff',
   selection: colors.lime + '30',
   selectionBorder: colors.lime + '70',
-  lineHighlight: ((): string => C(elements.background).darken(0.2).hex())(),
+  lineHighlight: C(dry.background).darken(0.2).hex(),
   findHighlight: colors.yellow + '40',
   guide: colors.foregrounds[1] + '35',
   activeGuide: colors.foregrounds[1] + '50',
