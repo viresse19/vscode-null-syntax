@@ -6,6 +6,7 @@ const theme: ITheme = {
   type: 'dark',
   colors: {
     'foreground': elements.text,
+    'editor.foreground': elements.text,
     'editor.background': elements.background,
     'selection.background': elements.selection,
     'editor.selectionHighlightBorder': elements.selectionBorder,
