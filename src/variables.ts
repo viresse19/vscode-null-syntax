@@ -51,14 +51,14 @@ export const elements = {
   regexp: colors.blue,
   quote: colors.shade1,
   comment: colors.purple,
-  annotation: C(colors.darkPurple).saturate(0.6).hexString(),
-  annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hexString(),
-  annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hexString(),
+  annotation: C(colors.darkPurple).saturate(0.6).hex(),
+  annotation2: C(colors.darkPurple).desaturate(0.35).lighten(0.15).hex(),
+  annotation3: C(colors.darkPurple).mix(C(colors.teal), 0.5).desaturate(0.34).darken(0.12).hex(),
 
   function: colors.orange,
 
   variable: colors.yellow,
-  support: C(colors.yellow, C(colors.foregrounds[1])).hexString(),
+  support: C(colors.yellow).mix(C(colors.foregrounds[1])).hex(),
   supportType: colors.red,
   supportFunction: colors.lime,
   storage: colors.shade,
