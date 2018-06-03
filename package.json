@@ -1,7 +1,7 @@
 {
 	"name": "null-syntax",
 	"displayName": "Null Syntax",
-	"version": "0.10.0",
+	"version": "0.11.0",
 	"description": "A theme which fades punctuation & highlights control flow",
 	"publisher": "nfour",
 	"scripts": {
@@ -32,7 +32,7 @@
 			{
 				"label": "Null Syntax",
 				"uiTheme": "vs-dark",
-				"path": "./themes/null-syntax.tmTheme"
+				"path": "./themes/null-syntax.json"
 			}
 		]
 	},

@@ -28,10 +28,12 @@ export const colors = {
   shade3: '#3a3a3a',
 };
 
+const dry: any = {};
+
 export const elements = {
   importantText: C(colors.cyan).lighten(0.5).desaturate(0.5).hex(),
   text: colors.foregrounds[1],
-  background: C(colors.back)
+  background: dry.background = C(colors.back)
     .mix(C(colors.blue))
     .mix(C(colors.purple).desaturate(0.4))
     .darken(0.6).desaturate(0.34).hex(),
@@ -76,6 +78,7 @@ export const elements = {
   caret: '#ffffff',
   selection: colors.lime + '30',
   selectionBorder: colors.lime + '70',
+  lineHighlight: C(dry.background).darken(0.2).hex(),
   findHighlight: colors.yellow + '40',
   guide: colors.foregrounds[1] + '35',
   activeGuide: colors.foregrounds[1] + '50',
