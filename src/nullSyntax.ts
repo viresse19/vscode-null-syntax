@@ -14,7 +14,7 @@ export default {
         invisibles: elements.invisibles,
         selection: elements.selection,
         selectionBorder: elements.selectionBorder,
-        lineHighlight: C(elements.background).darken(0.2).hexString(),
+        lineHighlight: C(elements.background).darken(0.2).hex(),
         guide: elements.guide,
         activeGuide: elements.activeGuide,
         findHighlight: elements.findHighlight,
