@@ -8,13 +8,14 @@ const theme: ITheme = {
     'foreground': elements.text,
     'editor.foreground': elements.text,
     'editor.background': elements.background,
-    'selection.background': elements.selection,
+    'editor.selectionBackground': elements.selection,
     'editor.selectionHighlightBorder': elements.selectionBorder,
-    'editorCursor.foreground': elements.caret,
     'editor.findMatchHighlightBackground': elements.findHighlight,
-    'editorBracketMatch.border': elements.bracketContentsForeground,
     'editor.lineHighlightBackground': elements.lineHighlight,
+    'editorBracketMatch.border': elements.bracketContentsForeground,
+    'editorCursor.foreground': elements.caret,
     'editorWhitespace.foreground': elements.invisibles,
+    'selection.background': elements.selection,
   },
   tokenColors: [
     /**
