@@ -73,6 +73,7 @@ export const elements = {
   caret: '#ffffff',
   selection: colors.lime + '30',
   selectionBorder: colors.lime + '70',
+  lineHighlight: ((): string => C(elements.background).darken(0.2).hex())(),
   findHighlight: colors.yellow + '40',
   guide: colors.foregrounds[1] + '35',
   activeGuide: colors.foregrounds[1] + '50',

@@ -1,28 +1,21 @@
-import * as C from 'color';
+import { ITheme } from './types';
 import { elements } from './variables';
 
-export default {
-  uuid: '32bk64fa-d60n-4858-a5fc-5164xc49a2b8',
+const theme: ITheme = {
   name: 'Null-Syntax',
-  semanticClass: 'Null-Syntax',
-  settings: [
-    {
-      settings: {
-        background: elements.background,
-        caret: elements.caret,
-        foreground: elements.text,
-        invisibles: elements.invisibles,
-        selection: elements.selection,
-        selectionBorder: elements.selectionBorder,
-        lineHighlight: C(elements.background).darken(0.2).hex(),
-        guide: elements.guide,
-        activeGuide: elements.activeGuide,
-        findHighlight: elements.findHighlight,
-        bracketsForeground: elements.bracketsForeground,
-        bracketContentsForeground: elements.bracketContentsForeground,
-      },
-    },
-
+  type: 'dark',
+  colors: {
+    'foreground': elements.text,
+    'editor.background': elements.background,
+    'selection.background': elements.selection,
+    'editor.selectionHighlightBorder': elements.selectionBorder,
+    'editorCursor.foreground': elements.caret,
+    'editor.findMatchHighlightBackground': elements.findHighlight,
+    'editorBracketMatch.border': elements.bracketContentsForeground,
+    'editor.lineHighlightBackground': elements.lineHighlight,
+    'editorWhitespace.foreground': elements.invisibles,
+  },
+  tokenColors: [
     /**
      * Object property definition
      */
@@ -361,3 +354,5 @@ export default {
     },
   ],
 };
+
+export default theme;
