@@ -1,5 +1,5 @@
 import { ITheme } from './types';
-import { elements } from './variables';
+import { ansiColours, elements } from './variables';
 
 const theme: ITheme = {
   name: 'Null-Syntax',
@@ -9,7 +9,7 @@ const theme: ITheme = {
     'selection.background': elements.selection,
 
     'editor.foreground': elements.text,
-    'editor.background': elements.background,
+    'editor.background': ansiColours.black,
     'editor.selectionBackground': elements.selection,
     'editor.selectionHighlightBorder': elements.selectionBorder,
     'editor.findMatchHighlightBackground': elements.findHighlight,
@@ -19,6 +19,35 @@ const theme: ITheme = {
     'editorCursor.foreground': elements.caret,
     'editorWhitespace.foreground': elements.invisibles,
 
+    'sideBar.background': elements.background,
+    'sideBar.foreground': elements.text,
+    'sideBarSectionHeader.background': ansiColours.black,
+
+    'badge.foreground': elements.text,
+    'badge.background': ansiColours.green,
+
+    'activityBar.background': ansiColours.black,
+    'activityBar.foreground': elements.text,
+    'activityBarBadge.background': ansiColours.green,
+    'activityBarBadge.foreground': elements.text,
+
+    'list.focusBackground': ansiColours.red,
+    'list.hoverBackground': ansiColours.black,
+    'list.activeSelectionBackground': elements.selection,
+
+    'statusBar.background': ansiColours.cyan,
+    'statusBar.foreground': ansiColours.black,
+
+    'terminal.background': ansiColours.black,
+    'terminal.foreground': ansiColours.white,
+    'terminal.ansiBlack': ansiColours.black,
+    'terminal.ansiRed':  ansiColours.red,
+    'terminal.ansiGreen':  ansiColours.green,
+    'terminal.ansiYellow':  ansiColours.yellow,
+    'terminal.ansiBlue':  ansiColours.blue,
+    'terminal.ansiMagenta':  ansiColours.magenta,
+    'terminal.ansiCyan': ansiColours.cyan,
+    'terminal.ansiWhite': ansiColours.white,
   },
   tokenColors: [
     /**

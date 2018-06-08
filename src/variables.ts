@@ -8,24 +8,36 @@ export const colors = {
     '#bababa',
   ],
 
-  back: '#201f1f',
+  back: '#02011A',
 
-  red: '#CF1C58',
-  orange: '#cd772c',
-  yellow: '#CFD175',
-  gold: '#bfa383',
-  grass: '#A2BF51',
-  lime: '#009D4D',
-  teal: '#5C9D8E',
-  cyan: '#0BBFCF',
-  blue: '#4E4AD6',
-  purple: '#9C52C1',
-  darkPurple: '#705693',
+  red: '#D11F4E',
+  orange: '#D7561B',
+  yellow: '#E1FB55',
+  gold: '#FF69B4',
+  grass: '#ABD22A',
+  lime: '#B2E668',
+  teal: '#159587',
+  cyan: '#00CCDD',
+  blue: '#054EC3',
+  purple: '#371985',
+  darkPurple: '#151E4C',
 
   shade: '#808080',
   shade1: '#747474',
   shade2: '#646464',
   shade3: '#3a3a3a',
+};
+
+export const ansiColours = {
+  black: '#02011A',
+  red: '#D11F4E',
+  green: '#FF69B4',
+  // green: '#ABD22A',
+  yellow: '#E1FB55',
+  blue: '#321E7C',
+  magenta: '#AA00AA',
+  cyan: '#00CCDD',
+  white: '#AAAAAA',
 };
 
 const dry: any = {};
